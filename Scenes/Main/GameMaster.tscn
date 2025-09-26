@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ovfbcxo2k1fx"]
+
+[ext_resource type="Script" uid="uid://bg6s2oxmnv8vx" path="res://Scripts/Main/game_master.gd" id="1_kvtcg"]
+
+[node name="GameMaster" type="Node"]
+script = ExtResource("1_kvtcg")

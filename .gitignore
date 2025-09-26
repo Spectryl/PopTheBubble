@@ -1,0 +1,8 @@
+*.zip
+*.7z
+*.rar
+.idea/
+.git/
+*.bak
+*.tmp
+*.log

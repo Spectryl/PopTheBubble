@@ -1,0 +1,4 @@
+res://Scripts/Main/game_master.gd
+res://Scenes/Main/GameMaster.tscn
+res://Scripts/Main Menu/main_menu_master.gd
+res://Scenes/Main Menu/MainMenuMaster.tscn

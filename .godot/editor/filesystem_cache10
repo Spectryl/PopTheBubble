@@ -1,3 +1,21 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1758825225
+::res://::1758825496
 icon.svg::CompressedTexture2D::8621876208959884478::1758825225::1758825237::1::::<><><>0<>0<>cefe94c281ceaa9e3b1e21a43d714801<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://Art/::1758825520
+::res://Art/Project Files/::1758825516
+::res://Audio/::1758825505
+::res://Audio/Music/::1758825500
+::res://Audio/Sound/::1758825504
+::res://Font/::1758838269
+RoadRage-Regular.ttf::FontFile::7125582611857078114::1757812810::1758838308::1::::<><><>0<>0<>5d385684e4f46ef8498b853ec7f6fde8<>res://.godot/imported/RoadRage-Regular.ttf-8a244bd978e4d64f0995c4eda66b7565.fontdata::
+::res://Resources/::1758825471
+::res://Scenes/::1758829607
+::res://Scenes/Main/::1758829619
+GameMaster.tscn::PackedScene::1026301255775248041::1758830512::0::1::::<><><>0<>0<><>::uid://bg6s2oxmnv8vx::::res://Scripts/Main/game_master.gd
+::res://Scenes/Main Menu/::1758825567
+::res://Scenes/UI/::1758825573
+::res://Scripts/::1758829647
+::res://Scripts/Main/::1758829651
+game_master.gd::GDScript::2872691349623242269::1758829651::0::1::::<>Node2D<><>0<>0<><>::
+::res://Scripts/Main Menu/::1758825593
+::res://Scripts/UI/::1758825599
