@@ -1,8 +1,35 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1758854275
+::res://::1758864457
 icon.svg::CompressedTexture2D::8621876208959884478::1758825225::1758825237::1::::<><><>0<>0<>cefe94c281ceaa9e3b1e21a43d714801<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://Art/::1758825520
-::res://Art/Project Files/::1758825516
+::res://addons/::1758864823
+::res://addons/cameraregion2d/::1758864824
+CameraRegion2D.gd::GDScript::9217896240216134155::1758864823::0::1::::CameraRegion2D<>Node2D<><>0<>1<><>::
+CameraRegionController2D.gd::GDScript::887575789356860325::1758864823::0::1::::CameraRegionController2D<>Node2D<><>0<>1<><>::
+CameraTransition.gd::GDScript::1415915335630516713::1758864823::0::1::::CameraTransition<>Resource<><>0<>1<><>::
+plugin.cfg::TextFile::-1::1758864824::0::1::::<><><>0<>0<><>::
+plugin.gd::GDScript::3011287905307282752::1758864824::0::1::::<>EditorPlugin<><>0<>1<><>::
+::res://addons/cameraregion2d/icons/::1758864824
+CameraRegion2D.svg::CompressedTexture2D::2320224197743953426::1758864823::1758864824::1::::<><><>0<>0<>f03d9c11350ab47baee72d3d45340718<>res://.godot/imported/CameraRegion2D.svg-9939a41a103c06ae12e759ddb0183a7d.ctex::
+CameraRegionController2D.svg::CompressedTexture2D::6617195655589613942::1758864823::1758864824::1::::<><><>0<>0<>a2c867be4f7a477e5712b92fbb07a1b8<>res://.godot/imported/CameraRegionController2D.svg-bad115586d27f80d5996a18d99378e40.ctex::
+CameraTransition.svg::CompressedTexture2D::5629101222568253342::1758864824::1758864824::1::::<><><>0<>0<>ba301c84bb917863b11d93d474efd3dd<>res://.godot/imported/CameraTransition.svg-901ce28b2beb46195376e7e225300a6e.ctex::
+::res://addons/jamcountdown/::1758864457
+countdown.gd::GDScript::7040174176792679916::1758864457::0::1::::<>Control<><>0<>1<><>::
+countdown_editor.gd::GDScript::2508000844167559063::1758864457::0::1::::<>ConfirmationDialog<><>0<>1<><>::
+jam_countdown.tscn::PackedScene::8434724113400949888::1758864457::0::1::::<><><>0<>0<><>::uid://ck2tdglnsj604::::res://addons/jamcountdown/fonts/AtkinsonHyperlegibleNext-Regular.ttf<>uid://c7kkv074krtrw::::res://addons/jamcountdown/countdown.gd<>uid://d3g8pb4owhwoa::::res://addons/jamcountdown/fonts/AtkinsonHyperlegibleMono-Regular.ttf<>uid://bh410yicf6sp4::::res://addons/jamcountdown/icons/follow_link.svg<>uid://bby5n4budogex::::res://addons/jamcountdown/countdown_editor.gd
+plugin.cfg::TextFile::-1::1758864457::0::1::::<><><>0<>0<><>::
+plugin.gd::GDScript::9017364716949449905::1758864457::0::1::::<>EditorPlugin<><>0<>1<><>::
+::res://addons/jamcountdown/fonts/::1758864457
+AtkinsonHyperlegibleMono-Bold.ttf::FontFile::415723715397973825::1758864457::1758864459::1::::<><><>0<>0<>605ad07aca28f832ab13876171e43756<>res://.godot/imported/AtkinsonHyperlegibleMono-Bold.ttf-89e0d57d333032556788aa2248ad157e.fontdata::
+AtkinsonHyperlegibleMono-Regular.ttf::FontFile::9138966485126909900::1758864457::1758864459::1::::<><><>0<>0<>b2b88a9e942de05436087a9517cf13b8<>res://.godot/imported/AtkinsonHyperlegibleMono-Regular.ttf-7002c2141dfbf979c90ae6ffdd0b1b11.fontdata::
+AtkinsonHyperlegibleNext-Bold.ttf::FontFile::8189792712953428076::1758864457::1758864459::1::::<><><>0<>0<>2225d635aa6168b0196cf48dd1529bbe<>res://.godot/imported/AtkinsonHyperlegibleNext-Bold.ttf-93f7a0da08ad588fced042c99cf90546.fontdata::
+AtkinsonHyperlegibleNext-Regular.ttf::FontFile::5531627316118471859::1758864457::1758864459::1::::<><><>0<>0<>2d305dbfdde133ee374182e948153a06<>res://.godot/imported/AtkinsonHyperlegibleNext-Regular.ttf-dcbb6a035fe91c7d4e7931e78727cd11.fontdata::
+::res://addons/jamcountdown/icons/::1758864457
+follow_link.svg::CompressedTexture2D::2939234103704242795::1758864457::1758864459::1::::<><><>0<>0<>b98574db58dcfb336ba17cb0629b0aa4<>res://.godot/imported/follow_link.svg-9a62ff42abf4d331fa45ad90e1c993f8.ctex::
+::res://Art/::1758905901
+::res://Art/Bubbles/::1758906107
+Bubble.png::CompressedTexture2D::8351403959105595579::1758905912::1758906484::1::::<><><>0<>0<>1cfa75ba732961f864653b089e324dc9<>res://.godot/imported/Bubble.png-3c101acf98a5960b2939556462860ae4.ctex::
+SmallBubble.png::CompressedTexture2D::5510296774105575882::1758906103::1758906488::1::::<><><>0<>0<>830e2c31092182a6a427e80dcde38fb8<>res://.godot/imported/SmallBubble.png-d59cb970d5b32f60bdbc686c4509c049.ctex::
+::res://Art/Project Files/::1758906093
 ::res://Audio/::1758825505
 ::res://Audio/Music/::1758825500
 ::res://Audio/Sound/::1758825504
@@ -10,8 +37,9 @@ icon.svg::CompressedTexture2D::8621876208959884478::1758825225::1758825237::1:::
 RoadRage-Regular.ttf::FontFile::7125582611857078114::1757812810::1758838308::1::::<><><>0<>0<>5d385684e4f46ef8498b853ec7f6fde8<>res://.godot/imported/RoadRage-Regular.ttf-8a244bd978e4d64f0995c4eda66b7565.fontdata::
 ::res://Resources/::1758853838
 ButtonTheme.tres::Theme::1846637969778801658::1758853838::0::1::::<><><>0<>0<><>::uid://c8rxkmcj87xvm::::res://Font/RoadRage-Regular.ttf
-::res://Scenes/::1758857560
+::res://Scenes/::1758906188
 player.tscn::PackedScene::1943666171757167068::1758863729::0::1::::<><><>0<>0<><>::uid://bq1g3vqh3w0o5::::res://Scripts/player.gd
+bubble.tscn::PackedScene::8626977304033175999::1758906272::0::1::::<><><>0<>0<><>::uid://dq8qnx6rw0afj::::res://Art/Bubbles/Bubble.png
 world_boundary.tscn::PackedScene::14842707494191447::1758854707::0::1::::<><><>0<>0<><>::
 ::res://Scenes/Main/::1758829619
 GameMaster.tscn::PackedScene::1026301255775248041::1758838700::0::1::::<><><>0<>0<><>::uid://bg6s2oxmnv8vx::::res://Scripts/Main/game_master.gd
@@ -19,11 +47,11 @@ GameMaster.tscn::PackedScene::1026301255775248041::1758838700::0::1::::<><><>0<>
 MainMaster.tscn::PackedScene::7248035450114292791::1758863481::0::1::::<><><>0<>0<><>::uid://dxyyr1ix1p24e::::res://Scripts/Main/main_master.gd<>uid://hgpssyy78rr::::res://Scenes/world_boundary.tscn<>uid://2xr5r7dti6l1::::res://Scenes/player.tscn
 MainMenuMaster.tscn::PackedScene::6797043151535821250::1758853931::0::1::::<><><>0<>0<><>::uid://bbqu8r7bxve6h::::res://Scripts/Main Menu/main_menu_master.gd<>uid://1kr4fl0cxyvy::::res://Resources/ButtonTheme.tres
 ::res://Scenes/UI/::1758825573
-::res://Scripts/::1758863811
-player.gd::GDScript::3563531435756692398::1758863811::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
+::res://Scripts/::1758906451
+player.gd::GDScript::3563531435756692398::1758906451::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
 ::res://Scripts/Main/::1758861656
 game_master.gd::GDScript::2872691349623242269::1758861656::0::1::::GameMaster<>Node<><>0<>0<><>::
 main_master.gd::GDScript::8824639466220181314::1758854214::0::1::::<>Node2D<><>0<>0<><>::
-::res://Scripts/Main Menu/::1758848773
+::res://Scripts/Main Menu/::1758905106
 main_menu_master.gd::GDScript::2490913784857976685::1758848773::0::1::::<>Control<><>0<>0<><>::
 ::res://Scripts/UI/::1758825599

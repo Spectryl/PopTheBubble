@@ -12,6 +12,7 @@ SPEED = 100
 ACCELERATION = 8
 FRICTION = 21
 JUMP_POWER = 500
+FAST_FALL_SPEED = 50
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -60)
