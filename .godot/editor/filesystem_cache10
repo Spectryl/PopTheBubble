@@ -25,11 +25,13 @@ AtkinsonHyperlegibleNext-Bold.ttf::FontFile::8189792712953428076::1758864457::17
 AtkinsonHyperlegibleNext-Regular.ttf::FontFile::5531627316118471859::1758864457::1758864459::1::::<><><>0<>0<>2d305dbfdde133ee374182e948153a06<>res://.godot/imported/AtkinsonHyperlegibleNext-Regular.ttf-dcbb6a035fe91c7d4e7931e78727cd11.fontdata::
 ::res://addons/jamcountdown/icons/::1758864457
 follow_link.svg::CompressedTexture2D::2939234103704242795::1758864457::1758864459::1::::<><><>0<>0<>b98574db58dcfb336ba17cb0629b0aa4<>res://.godot/imported/follow_link.svg-9a62ff42abf4d331fa45ad90e1c993f8.ctex::
-::res://Art/::1758905901
+::res://Art/::1758922783
 ::res://Art/Bubbles/::1758906107
 Bubble.png::CompressedTexture2D::8351403959105595579::1758905912::1758906484::1::::<><><>0<>0<>1cfa75ba732961f864653b089e324dc9<>res://.godot/imported/Bubble.png-3c101acf98a5960b2939556462860ae4.ctex::
 SmallBubble.png::CompressedTexture2D::5510296774105575882::1758906103::1758906488::1::::<><><>0<>0<>830e2c31092182a6a427e80dcde38fb8<>res://.godot/imported/SmallBubble.png-d59cb970d5b32f60bdbc686c4509c049.ctex::
-::res://Art/Project Files/::1758906093
+::res://Art/Characters/::1758922956
+Pop.png::CompressedTexture2D::2655646238979887506::1758922792::1758923231::1::::<><><>0<>0<>e8cd5446730f7cd023e1eca0937350e4<>res://.godot/imported/Pop.png-ef15703727bef18b6f05cd3792347ba1.ctex::
+::res://Art/Project Files/::1758922770
 ::res://Audio/::1758825505
 ::res://Audio/Music/::1758825500
 ::res://Audio/Sound/::1758825504
@@ -38,8 +40,8 @@ RoadRage-Regular.ttf::FontFile::7125582611857078114::1757812810::1758838308::1::
 ::res://Resources/::1758853838
 ButtonTheme.tres::Theme::1846637969778801658::1758853838::0::1::::<><><>0<>0<><>::uid://c8rxkmcj87xvm::::res://Font/RoadRage-Regular.ttf
 ::res://Scenes/::1758906188
-player.tscn::PackedScene::1943666171757167068::1758863729::0::1::::<><><>0<>0<><>::uid://bq1g3vqh3w0o5::::res://Scripts/player.gd
-bubble.tscn::PackedScene::8626977304033175999::1758906272::0::1::::<><><>0<>0<><>::uid://dq8qnx6rw0afj::::res://Art/Bubbles/Bubble.png
+bubble.tscn::PackedScene::8626977304033175999::1758908851::0::1::::<><><>0<>0<><>::uid://chy865v3wn1vf::::res://Scripts/bubble.gd<>uid://dq8qnx6rw0afj::::res://Art/Bubbles/Bubble.png
+player.tscn::PackedScene::1943666171757167068::1758907930::0::1::::<><><>0<>0<><>::uid://bq1g3vqh3w0o5::::res://Scripts/player.gd
 world_boundary.tscn::PackedScene::14842707494191447::1758854707::0::1::::<><><>0<>0<><>::
 ::res://Scenes/Main/::1758829619
 GameMaster.tscn::PackedScene::1026301255775248041::1758838700::0::1::::<><><>0<>0<><>::uid://bg6s2oxmnv8vx::::res://Scripts/Main/game_master.gd
@@ -47,8 +49,9 @@ GameMaster.tscn::PackedScene::1026301255775248041::1758838700::0::1::::<><><>0<>
 MainMaster.tscn::PackedScene::7248035450114292791::1758863481::0::1::::<><><>0<>0<><>::uid://dxyyr1ix1p24e::::res://Scripts/Main/main_master.gd<>uid://hgpssyy78rr::::res://Scenes/world_boundary.tscn<>uid://2xr5r7dti6l1::::res://Scenes/player.tscn
 MainMenuMaster.tscn::PackedScene::6797043151535821250::1758853931::0::1::::<><><>0<>0<><>::uid://bbqu8r7bxve6h::::res://Scripts/Main Menu/main_menu_master.gd<>uid://1kr4fl0cxyvy::::res://Resources/ButtonTheme.tres
 ::res://Scenes/UI/::1758825573
-::res://Scripts/::1758906451
-player.gd::GDScript::3563531435756692398::1758906451::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
+::res://Scripts/::1758908815
+bubble.gd::GDScript::5315768968765738559::1758908815::0::1::::Bubble<>RigidBody2D<><>0<>0<><>::
+player.gd::GDScript::3563531435756692398::1758908129::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
 ::res://Scripts/Main/::1758861656
 game_master.gd::GDScript::2872691349623242269::1758861656::0::1::::GameMaster<>Node<><>0<>0<><>::
 main_master.gd::GDScript::8824639466220181314::1758854214::0::1::::<>Node2D<><>0<>0<><>::
