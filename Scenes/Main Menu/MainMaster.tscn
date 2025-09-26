@@ -1,3 +1,6 @@
-[gd_scene format=3 uid="uid://dbjac5fnfs35l"]
+[gd_scene load_steps=2 format=3 uid="uid://dbjac5fnfs35l"]
+
+[ext_resource type="Script" uid="uid://dxyyr1ix1p24e" path="res://Scripts/Main/main_master.gd" id="1_tsgew"]
 
 [node name="MainMaster" type="Node2D"]
+script = ExtResource("1_tsgew")
