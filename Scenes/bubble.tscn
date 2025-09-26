@@ -1,7 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://du58b5qnget32"]
+[gd_scene load_steps=5 format=3 uid="uid://du58b5qnget32"]
 
 [ext_resource type="Script" uid="uid://chy865v3wn1vf" path="res://Scripts/bubble.gd" id="1_amq2t"]
 [ext_resource type="Texture2D" uid="uid://dq8qnx6rw0afj" path="res://Art/Bubbles/Bubble.png" id="1_fu76k"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_amq2t"]
+bounce = 0.8
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fu76k"]
 radius = 64.00781
@@ -9,8 +12,12 @@ radius = 64.00781
 [node name="Bubble" type="RigidBody2D"]
 collision_layer = 2
 collision_mask = 2
+physics_material_override = SubResource("PhysicsMaterial_amq2t")
 gravity_scale = 0.0
-angular_velocity = 0.34906584
+contact_monitor = true
+max_contacts_reported = 10
+linear_damp = 0.1
+angular_velocity = 1.3962634
 script = ExtResource("1_amq2t")
 BUBBLE_SPEED = 200
 
@@ -23,3 +30,5 @@ texture = ExtResource("1_fu76k")
 position = Vector2(1, -65)
 shape = SubResource("CircleShape2D_fu76k")
 debug_color = Color(0.97228056, 0, 0.445436, 0.41960785)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -24,6 +24,10 @@ window/size/viewport_height=720
 
 enabled=PackedStringArray("res://addons/jamcountdown/plugin.cfg")
 
+[global_group]
+
+Poisonable="Group to check if someone can be poisoned"
+
 [input]
 
 MoveUp={
