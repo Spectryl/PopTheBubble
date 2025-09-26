@@ -21,7 +21,7 @@ func switch_scene(NewActiviy : GameActivity) -> void:
 			current_scene = load("res://Scenes/Main Menu/MainMenuMaster.tscn").instantiate()
 			current_activity = GameActivity.MAIN_MENU
 		GameActivity.GAME:
-			current_scene = load("res://Scenes/Main Menu/MainMenuMaster.tscn").instantiate()
+			current_scene = load("res://Scenes/Main Menu/MainMaster.tscn").instantiate()
 			current_activity = GameActivity.GAME
 	add_child(current_scene)
 	

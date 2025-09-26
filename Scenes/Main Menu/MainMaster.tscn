@@ -1,6 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://dbjac5fnfs35l"]
+[gd_scene load_steps=4 format=3 uid="uid://dbjac5fnfs35l"]
 
 [ext_resource type="Script" uid="uid://dxyyr1ix1p24e" path="res://Scripts/Main/main_master.gd" id="1_tsgew"]
+[ext_resource type="PackedScene" uid="uid://hgpssyy78rr" path="res://Scenes/world_boundary.tscn" id="2_kmc7b"]
+[ext_resource type="PackedScene" uid="uid://2xr5r7dti6l1" path="res://Scenes/player.tscn" id="3_uxtqc"]
 
 [node name="MainMaster" type="Node2D"]
 script = ExtResource("1_tsgew")
+
+[node name="WorldBoundary" parent="." instance=ExtResource("2_kmc7b")]
+visible = false
+
+[node name="Player" parent="." instance=ExtResource("3_uxtqc")]
+JUMP_POWER = 500

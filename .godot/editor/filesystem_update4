@@ -4,3 +4,5 @@ res://Scripts/Main Menu/main_menu_master.gd
 res://Scenes/Main Menu/MainMenuMaster.tscn
 res://Scenes/Main Menu/MainMaster.tscn
 res://Scenes/world_boundary.tscn
+res://Scripts/player.gd
+res://Scenes/player.tscn
