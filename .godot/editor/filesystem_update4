@@ -1,1 +1,4 @@
 res://Scenes/player.tscn
+res://Scripts/bubble.gd
+res://Scenes/bubble.tscn
+res://Scenes/world_boundary.tscn
