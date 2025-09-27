@@ -19,6 +19,7 @@ var health : int
 var max_health : int 
 
 @onready var WORLD = get_parent()
+@onready var ANIMATION_PLAYER = $AnimationPlayer
 const BUBBLES_SCENE = preload("res://Scenes/bubble.tscn")
 
 func _physics_process(delta: float) -> void:
@@ -26,6 +27,7 @@ func _physics_process(delta: float) -> void:
 	handle_landing()
 	handle_player_movement(delta)
 	handle_player_attacks()
+	handle_player_animation()
 	move_and_slide()
 func handle_gravity(delta: float) -> void:
 	if not is_on_floor(): velocity.y += GRAVITY * delta
@@ -61,3 +63,6 @@ func handle_player_attacks() -> void:
 			shoot_direction = Vector2(-1,0) if looking_left else Vector2(1,0)
 		new_bubble.apply_central_impulse(shoot_direction * new_bubble.BUBBLE_SPEED)
 		
+
+func handle_player_animation() -> void:
+	ANIMATION_PLAYER.play("idle")
