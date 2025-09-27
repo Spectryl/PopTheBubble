@@ -1,8 +1,3 @@
-res://Scripts/Main Menu/main_menu_master.gd
-res://Scenes/Main Menu/MainMenuMaster.tscn
+res://Scenes/player.tscn
 res://Resources/ButtonTheme.tres
 res://Resources/LabelFontSettings.tres
-res://Scripts/web_component_delete.gd
-res://Scenes/WebComponentDelete.tscn
-res://Scripts/player.gd
-res://Scenes/player.tscn

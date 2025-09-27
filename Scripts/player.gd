@@ -86,6 +86,8 @@ func create_bubble() -> void:
 
 func handle_player_animation() -> void:
 	RIG.scale.x = .25 if looking_left else -.25
+	if abs(velocity.x) > 1 and is_on_floor() and not is_jumping and not is_falling:
+		ANIMATION_PLAYER.play("walking")
 	##ANIMATION_PLAYER.play("idle")
 	##if is_jumping:
 		##if velocity.y < 0: ANIMATION_PLAYER.play("jumping")

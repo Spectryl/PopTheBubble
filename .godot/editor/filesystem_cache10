@@ -40,27 +40,29 @@ Pop.png::CompressedTexture2D::2655646238979887506::1758922792::1758923231::1::::
 ::res://Font/::1758838308
 RoadRage-Regular.ttf::FontFile::7125582611857078114::1757812810::1758946675::1::::<><><>0<>0<>51972aad214998168edb3a6b5761f8ea<>res://.godot/imported/RoadRage-Regular.ttf-8a244bd978e4d64f0995c4eda66b7565.fontdata::
 ::res://Resources/::1758945872
-ButtonTheme.tres::Theme::1846637969778801658::1758947841::0::1::::<><><>0<>0<><>::uid://c8rxkmcj87xvm::::res://Font/RoadRage-Regular.ttf
-LabelFontSettings.tres::LabelSettings::1535201378844798506::1758947743::0::1::::<><><>0<>0<><>::
+ButtonTheme.tres::Theme::1846637969778801658::1758992650::0::1::::<><><>0<>0<><>::uid://c8rxkmcj87xvm::::res://Font/RoadRage-Regular.ttf
+LabelFontSettings.tres::LabelSettings::1535201378844798506::1758992650::0::1::::<><><>0<>0<><>::
 NewButtonTheme.tres::Theme::3087100848328825437::1758946954::0::1::::<><><>0<>0<><>::uid://c8rxkmcj87xvm::::res://Font/RoadRage-Regular.ttf
 PopTextureAtlus.tres::CompressedTexture2D::6741573538368650080::1758923255::0::1::::<><><>0<>0<><>::
-::res://Scenes/::1758943454
+::res://Scenes/::1758993007
 bubble.tscn::PackedScene::8626977304033175999::1758925403::0::1::::<><><>0<>0<><>::uid://chy865v3wn1vf::::res://Scripts/bubble.gd<>uid://dq8qnx6rw0afj::::res://Art/Bubbles/Bubble.png<>uid://ckrh1u6mu618i::::res://Art/Bubbles/SmallBubble.png
 caterpiller.tscn::PackedScene::4687203119519164249::1758943490::0::1::::<><><>0<>0<><>::
-player.tscn::PackedScene::1943666171757167068::1758937320::0::1::::<><><>0<>0<><>::uid://bq1g3vqh3w0o5::::res://Scripts/player.gd<>uid://c3bwy4j5tbnk7::::res://Resources/PopTextureAtlus.tres
+player.tscn::PackedScene::1943666171757167068::1759006635::0::1::::<><><>0<>0<><>::uid://bq1g3vqh3w0o5::::res://Scripts/player.gd<>uid://c3bwy4j5tbnk7::::res://Resources/PopTextureAtlus.tres
+WebComponentDelete.tscn::PackedScene::7961229543842334900::1758993066::0::1::::<><><>0<>0<><>::uid://baw0kaym53u27::::res://Scripts/web_component_delete.gd
 world_boundary.tscn::PackedScene::14842707494191447::1758924451::0::1::::<><><>0<>0<><>::
 ::res://Scenes/Main/::1758829619
 GameMaster.tscn::PackedScene::1026301255775248041::1758838700::0::1::::<><><>0<>0<><>::uid://bg6s2oxmnv8vx::::res://Scripts/Main/game_master.gd
 ::res://Scenes/Main Menu/::1758854202
 MainMaster.tscn::PackedScene::7248035450114292791::1758863481::0::1::::<><><>0<>0<><>::uid://dxyyr1ix1p24e::::res://Scripts/Main/main_master.gd<>uid://hgpssyy78rr::::res://Scenes/world_boundary.tscn<>uid://2xr5r7dti6l1::::res://Scenes/player.tscn
-MainMenuMaster.tscn::PackedScene::6797043151535821250::1758947841::0::1::::<><><>0<>0<><>::uid://bbqu8r7bxve6h::::res://Scripts/Main Menu/main_menu_master.gd<>uid://1kr4fl0cxyvy::::res://Resources/ButtonTheme.tres<>uid://v4wspbbfbsx3::::res://Resources/LabelFontSettings.tres
+MainMenuMaster.tscn::PackedScene::6797043151535821250::1758993092::0::1::::<><><>0<>0<><>::uid://bbqu8r7bxve6h::::res://Scripts/Main Menu/main_menu_master.gd<>uid://1kr4fl0cxyvy::::res://Resources/ButtonTheme.tres<>uid://v4wspbbfbsx3::::res://Resources/LabelFontSettings.tres<>uid://dloqj1joi8dqa::::res://Scenes/WebComponentDelete.tscn
 ::res://Scenes/UI/::1758825573
-::res://Scripts/::1758935130
+::res://Scripts/::1759005319
 bubble.gd::GDScript::5315768968765738559::1758925474::0::1::::Bubble<>RigidBody2D<><>0<>0<><>::
-player.gd::GDScript::3563531435756692398::1758935130::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
+player.gd::GDScript::3563531435756692398::1759005319::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
+web_component_delete.gd::GDScript::2433372814702372422::1758993056::0::1::::<>Node<><>0<>0<><>::
 ::res://Scripts/Main/::1758861656
 game_master.gd::GDScript::2872691349623242269::1758861656::0::1::::GameMaster<>Node<><>0<>0<><>::
 main_master.gd::GDScript::8824639466220181314::1758854214::0::1::::<>Node2D<><>0<>0<><>::
-::res://Scripts/Main Menu/::1758905106
-main_menu_master.gd::GDScript::2490913784857976685::1758848773::0::1::::<>Control<><>0<>0<><>::
+::res://Scripts/Main Menu/::1758992984
+main_menu_master.gd::GDScript::2490913784857976685::1758992984::0::1::::<>Control<><>0<>0<><>::
 ::res://Scripts/UI/::1758825599
