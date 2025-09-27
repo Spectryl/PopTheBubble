@@ -1,3 +1,4 @@
 res://Scenes/player.tscn
 res://Resources/ButtonTheme.tres
 res://Resources/LabelFontSettings.tres
+res://Scripts/player.gd
