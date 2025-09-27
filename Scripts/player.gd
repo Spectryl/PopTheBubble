@@ -11,9 +11,11 @@ var GRAVITY : int = ProjectSettings.get_setting("physics/2d/default_gravity")
 var is_dead : bool
 var is_invincible : bool
 var is_jumping : bool
+var is_falling : bool
 var is_attacking : bool
 var looking_left : bool
 var looking_right : bool
+var on_attack_cooldown : bool = false
 
 var health : int
 var max_health : int 
@@ -22,6 +24,7 @@ var max_health : int
 @onready var ANIMATION_PLAYER = $AnimationPlayer
 @onready var ANIMATION_TREE: AnimationTree = $AnimationTree
 @onready var RIG			  = $Rig
+@onready var ATTACKCDTIMER	= $AttackCooldownTimer
 const BUBBLES_SCENE = preload("res://Scenes/bubble.tscn")
 
 
@@ -52,18 +55,22 @@ func handle_player_jump() -> void:
 	# Short Hop/Cancel Jump
 	if Input.is_action_just_released("Jump") and velocity.y < 0:
 		velocity.y = 0
+		is_jumping = false
+		is_falling = true
 		ANIMATION_PLAYER.play("falling")
-	if velocity.y > 0:
+	if velocity.y > 0 and not is_falling:
+		is_falling = true
 		ANIMATION_PLAYER.play("falling")
 func handle_landing() -> void:
 	if Input.is_action_pressed("MoveDown"):
 		velocity.y += FAST_FALL_SPEED
-	if is_on_floor() and is_jumping:
+	if is_on_floor() and is_falling:
 		is_jumping = false
+		is_falling = false
 		ANIMATION_PLAYER.play("landing")
 	
 func handle_player_attacks() -> void:
-	if Input.is_action_just_pressed("Bubbles"):
+	if Input.is_action_just_pressed("Bubbles") and on_attack_cooldown == false:
 		var new_bubble = BUBBLES_SCENE.instantiate()
 		new_bubble.global_position = global_position
 		WORLD.add_child(new_bubble)
@@ -72,6 +79,8 @@ func handle_player_attacks() -> void:
 		if shoot_direction == Vector2.ZERO:
 			shoot_direction = Vector2(-1,0) if looking_left else Vector2(1,0)
 		new_bubble.apply_central_impulse(shoot_direction * new_bubble.BUBBLE_SPEED)
+		on_attack_cooldown = true
+		ATTACKCDTIMER.start()
 		
 
 func handle_player_animation() -> void:
@@ -80,3 +89,6 @@ func handle_player_animation() -> void:
 	##if is_jumping:
 		##if velocity.y < 0: ANIMATION_PLAYER.play("jumping")
 		##if velocity.y > 0: ANIMATION_PLAYER.play("falling")
+
+func _on_attack_cooldown_timer_timeout() -> void:
+	on_attack_cooldown = false
