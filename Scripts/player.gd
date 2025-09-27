@@ -71,17 +71,18 @@ func handle_landing() -> void:
 	
 func handle_player_attacks() -> void:
 	if Input.is_action_just_pressed("Bubbles") and on_attack_cooldown == false:
-		var new_bubble = BUBBLES_SCENE.instantiate()
-		new_bubble.global_position = global_position
-		WORLD.add_child(new_bubble)
-		
-		var shoot_direction = Input.get_vector("MoveLeft", "MoveRight", "MoveUp", "MoveDown")
-		if shoot_direction == Vector2.ZERO:
-			shoot_direction = Vector2(-1,0) if looking_left else Vector2(1,0)
-		new_bubble.apply_central_impulse(shoot_direction * new_bubble.BUBBLE_SPEED)
+		ANIMATION_PLAYER.play("attacking")
 		on_attack_cooldown = true
 		ATTACKCDTIMER.start()
-		
+func create_bubble() -> void:
+	var new_bubble = BUBBLES_SCENE.instantiate()
+	new_bubble.global_position = global_position
+	WORLD.add_child(new_bubble)
+	
+	var shoot_direction = Input.get_vector("MoveLeft", "MoveRight", "MoveUp", "MoveDown")
+	if shoot_direction == Vector2.ZERO:
+		shoot_direction = Vector2(-1,0) if looking_left else Vector2(1,0)
+	new_bubble.apply_central_impulse(shoot_direction * new_bubble.BUBBLE_SPEED)
 
 func handle_player_animation() -> void:
 	RIG.scale.x = .25 if looking_left else -.25
