@@ -20,7 +20,12 @@ var max_health : int
 
 @onready var WORLD = get_parent()
 @onready var ANIMATION_PLAYER = $AnimationPlayer
+@onready var ANIMATION_TREE: AnimationTree = $AnimationTree
+@onready var RIG			  = $Rig
 const BUBBLES_SCENE = preload("res://Scenes/bubble.tscn")
+
+
+
 
 func _physics_process(delta: float) -> void:
 	handle_gravity(delta)
@@ -43,15 +48,20 @@ func handle_player_jump() -> void:
 	if Input.is_action_just_pressed("Jump") and is_on_floor():
 		velocity.y = JUMP_POWER * -1
 		is_jumping = true
+		ANIMATION_PLAYER.play("jump_squat")
 	# Short Hop/Cancel Jump
 	if Input.is_action_just_released("Jump") and velocity.y < 0:
 		velocity.y = 0
-		is_jumping = false
+		ANIMATION_PLAYER.play("falling")
+	if velocity.y > 0:
+		ANIMATION_PLAYER.play("falling")
 func handle_landing() -> void:
 	if Input.is_action_pressed("MoveDown"):
 		velocity.y += FAST_FALL_SPEED
 	if is_on_floor() and is_jumping:
 		is_jumping = false
+		ANIMATION_PLAYER.play("landing")
+	
 func handle_player_attacks() -> void:
 	if Input.is_action_just_pressed("Bubbles"):
 		var new_bubble = BUBBLES_SCENE.instantiate()
@@ -65,4 +75,8 @@ func handle_player_attacks() -> void:
 		
 
 func handle_player_animation() -> void:
-	ANIMATION_PLAYER.play("idle")
+	RIG.scale.x = .25 if looking_left else -.25
+	##ANIMATION_PLAYER.play("idle")
+	##if is_jumping:
+		##if velocity.y < 0: ANIMATION_PLAYER.play("jumping")
+		##if velocity.y > 0: ANIMATION_PLAYER.play("falling")

@@ -60,9 +60,6 @@ func _tween_button_scale(button: Control, target_scale: Vector2, reset_z: bool =
 		tween.finished.connect(func(): button.z_index = 0)
 	else:
 		button.z_index = 1
-
-
-
 func _on_play_button_mouse_entered() -> void:
 	_tween_button_scale(play_button, HOVER_SCALE)
 func _on_play_button_mouse_exited() -> void:

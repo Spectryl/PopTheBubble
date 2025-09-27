@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dloqj1joi8dqa"]
+
+[ext_resource type="Script" uid="uid://baw0kaym53u27" path="res://Scripts/web_component_delete.gd" id="1_huknv"]
+
+[node name="WebComponentDelete" type="Node"]
+script = ExtResource("1_huknv")

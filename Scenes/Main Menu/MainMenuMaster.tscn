@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://c33skpvxtqmra"]
+[gd_scene load_steps=7 format=3 uid="uid://c33skpvxtqmra"]
 
 [ext_resource type="Script" uid="uid://bbqu8r7bxve6h" path="res://Scripts/Main Menu/main_menu_master.gd" id="1_msi6g"]
 [ext_resource type="Theme" uid="uid://1kr4fl0cxyvy" path="res://Resources/ButtonTheme.tres" id="2_04wfc"]
 [ext_resource type="LabelSettings" uid="uid://v4wspbbfbsx3" path="res://Resources/LabelFontSettings.tres" id="2_m7yir"]
+[ext_resource type="PackedScene" uid="uid://dloqj1joi8dqa" path="res://Scenes/WebComponentDelete.tscn" id="4_n6g3j"]
 
 [sub_resource type="Gradient" id="Gradient_04wfc"]
 offsets = PackedFloat32Array(0.10958904, 1)
@@ -70,6 +71,8 @@ layout_mode = 2
 theme = ExtResource("2_04wfc")
 theme_type_variation = &"FlatButton"
 text = "Quit"
+
+[node name="WebComponentDelete" parent="MarginContainer/VBoxContainer/QuitButton" instance=ExtResource("4_n6g3j")]
 
 [connection signal="mouse_entered" from="MarginContainer/VBoxContainer/PlayButton" to="." method="_on_play_button_mouse_entered"]
 [connection signal="mouse_exited" from="MarginContainer/VBoxContainer/PlayButton" to="." method="_on_play_button_mouse_exited"]
