@@ -3,3 +3,8 @@ res://Scripts/bubble.gd
 res://Scenes/bubble.tscn
 res://Scenes/world_boundary.tscn
 res://Scripts/player.gd
+res://Scenes/caterpiller.tscn
+res://Scenes/Main Menu/MainMenuMaster.tscn
+res://Resources/ButtonTheme.tres
+res://Resources/LabelFontSettings.tres
+res://Resources/NewButtonTheme.tres

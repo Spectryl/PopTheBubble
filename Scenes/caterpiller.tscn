@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://b71rsypt5igpd"]
+
+[node name="Caterpiller" type="CharacterBody2D"]
+
+[node name="Rig" type="Node2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

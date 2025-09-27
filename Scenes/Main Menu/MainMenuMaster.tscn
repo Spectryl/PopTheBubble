@@ -1,12 +1,28 @@
-[gd_scene load_steps=3 format=3 uid="uid://c33skpvxtqmra"]
+[gd_scene load_steps=6 format=3 uid="uid://c33skpvxtqmra"]
 
 [ext_resource type="Script" uid="uid://bbqu8r7bxve6h" path="res://Scripts/Main Menu/main_menu_master.gd" id="1_msi6g"]
 [ext_resource type="Theme" uid="uid://1kr4fl0cxyvy" path="res://Resources/ButtonTheme.tres" id="2_04wfc"]
+[ext_resource type="LabelSettings" uid="uid://v4wspbbfbsx3" path="res://Resources/LabelFontSettings.tres" id="2_m7yir"]
+
+[sub_resource type="Gradient" id="Gradient_04wfc"]
+offsets = PackedFloat32Array(0.10958904, 1)
+colors = PackedColorArray(0.47058824, 0.21176471, 0.5529412, 1, 0.21960784, 0.53333336, 0.48235294, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_m7yir"]
+gradient = SubResource("Gradient_04wfc")
+width = 1280
+height = 720
+fill_from = Vector2(0.5, 0)
+fill_to = Vector2(0.5, 1)
 
 [node name="MainMenuMaster" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_msi6g")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+texture = SubResource("GradientTexture2D_m7yir")
+polygon = PackedVector2Array(1280.829, 0.6006298, 1280.5802, 719.7694, 2.2155008, 720.3658, 1.3167467, -0.6445837)
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -25,6 +41,11 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 alignment = 1
 
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Pop The Bubble"
+label_settings = ExtResource("2_m7yir")
+
 [node name="PlayButton" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("2_04wfc")
@@ -35,6 +56,7 @@ text = "Play"
 layout_mode = 2
 theme = ExtResource("2_04wfc")
 theme_type_variation = &"FlatButton"
+theme_override_constants/outline_size = 5
 text = "Options"
 
 [node name="CreditsButton" type="Button" parent="MarginContainer/VBoxContainer"]

@@ -1,7 +1,42 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://1kr4fl0cxyvy"]
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://1kr4fl0cxyvy"]
 
 [ext_resource type="FontFile" uid="uid://c8rxkmcj87xvm" path="res://Font/RoadRage-Regular.ttf" id="1_mt4at"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wx2l1"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c1qgm"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_color = Color(0.8, 0.8, 0.8, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mt4at"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_alore"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_color = Color(0.8, 0.8, 0.8, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k2kie"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+draw_center = false
+border_color = Color(3.657937e-06, 0.92649037, 0.81018955, 0)
+
 [resource]
 default_font = ExtResource("1_mt4at")
-default_font_size = 32
+Button/colors/font_color = Color(0.47058824, 0.21176471, 0.5529412, 1)
+Button/colors/font_disabled_color = Color(0.47058824, 0.21176471, 0.5529412, 1)
+Button/colors/font_focus_color = Color(0.7490196, 0.47058824, 0.84313726, 1)
+Button/colors/font_hover_color = Color(0.75037694, 0.47208184, 0.8438117, 1)
+Button/colors/font_hover_pressed_color = Color(0.7490196, 0.47058824, 0.84313726, 1)
+Button/colors/font_outline_color = Color(1, 1, 1, 1)
+Button/colors/font_pressed_color = Color(0.47058824, 0.21176471, 0.5529412, 1)
+Button/colors/icon_normal_color = Color(0, 0, 0, 0)
+Button/constants/outline_size = 5
+Button/font_sizes/font_size = 88
+Button/fonts/font = ExtResource("1_mt4at")
+Button/styles/disabled = SubResource("StyleBoxFlat_wx2l1")
+Button/styles/focus = SubResource("StyleBoxFlat_c1qgm")
+Button/styles/hover = SubResource("StyleBoxFlat_mt4at")
+Button/styles/normal = SubResource("StyleBoxFlat_alore")
+Button/styles/pressed = SubResource("StyleBoxFlat_k2kie")
