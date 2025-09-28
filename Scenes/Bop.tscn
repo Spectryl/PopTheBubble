@@ -3347,6 +3347,7 @@ transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition
 radius = 600.0
 
 [node name="Bop" type="CharacterBody2D"]
+collision_layer = 0
 script = ExtResource("1_ivweg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -3451,7 +3452,7 @@ parameters/conditions/!is_jumping = false
 "parameters/conditions/is_jumping and velocity.y > 0" = false
 
 [node name="AttackCooldownTimer" type="Timer" parent="."]
-wait_time = 0.7
+wait_time = 1.7999999999999998
 one_shot = true
 
 [node name="Area2D" type="Area2D" parent="."]

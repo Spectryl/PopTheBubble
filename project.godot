@@ -87,4 +87,4 @@ common/physics_interpolation=true
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
-environment/defaults/default_clear_color=Color(0.11402159, 0.21987319, 0.12511978, 1)
+environment/bg_color=Color(0.14, 0.14, 0.14, 1)

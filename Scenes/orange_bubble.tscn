@@ -1,0 +1,69 @@
+[gd_scene load_steps=9 format=3 uid="uid://bpfyklb7d7am5"]
+
+[ext_resource type="Script" uid="uid://chy865v3wn1vf" path="res://Scripts/bubble.gd" id="1_uq4rs"]
+[ext_resource type="Texture2D" uid="uid://c227e0rfrlybv" path="res://Art/Bubbles/OrangeBubble.png" id="2_uq4rs"]
+[ext_resource type="Texture2D" uid="uid://58ry5h30ab7t" path="res://Art/Bubbles/SmallOrangeBubble.png" id="3_ibttk"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_amq2t"]
+bounce = 0.8
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fu76k"]
+radius = 64.00781
+
+[sub_resource type="Curve" id="Curve_0iu24"]
+_limits = [-360.0, 360.0, 0.0, 1.0]
+_data = [Vector2(0, 157.75284), 0.0, 0.0, 0, 0, Vector2(0.9833333, -101.1236), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Curve_7vocm"]
+_limits = [-200.0, 200.0, 0.0, 1.0]
+_data = [Vector2(0.016666666, 146.06743), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Curve_35n32"]
+_data = [Vector2(0.027777776, 0.3595506), 0.0, 0.0, 0, 0, Vector2(0.5333333, 0.056179762), 0.0, 0.0, 0, 0, Vector2(0.98888886, 0.022471905), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[node name="OrangeBubble" type="RigidBody2D"]
+collision_layer = 6
+collision_mask = 6
+physics_material_override = SubResource("PhysicsMaterial_amq2t")
+gravity_scale = 0.0
+contact_monitor = true
+max_contacts_reported = 10
+linear_damp = 0.1
+angular_velocity = 1.3962634
+script = ExtResource("1_uq4rs")
+BUBBLE_SPEED = 200
+POISON_DAMAGE = 5
+TIMER_LENGTH = 5.0
+DELETE_TIMER_LENGTH = 1.01
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1, -65)
+texture = ExtResource("2_uq4rs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(1, -65)
+shape = SubResource("CircleShape2D_fu76k")
+debug_color = Color(0.97228056, 0, 0.445436, 0.41960785)
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2(0, -64)
+emitting = false
+amount = 20
+texture = ExtResource("3_ibttk")
+one_shot = true
+explosiveness = 1.0
+lifetime_randomness = 0.35
+direction = Vector2(0, 0)
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 50.0
+initial_velocity_max = 150.0
+angular_velocity_curve = SubResource("Curve_0iu24")
+linear_accel_curve = SubResource("Curve_7vocm")
+scale_amount_curve = SubResource("Curve_35n32")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

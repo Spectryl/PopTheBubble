@@ -3452,7 +3452,7 @@ parameters/conditions/!is_jumping = false
 "parameters/conditions/is_jumping and velocity.y > 0" = false
 
 [node name="AttackCooldownTimer" type="Timer" parent="."]
-wait_time = 0.7
+wait_time = 0.8
 one_shot = true
 
 [connection signal="timeout" from="AttackCooldownTimer" to="." method="_on_attack_cooldown_timer_timeout"]
