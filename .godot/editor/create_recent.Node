@@ -1,3 +1,7 @@
+Label
+CanvasLayer
+Node
+Spawner
 Sprite2D
 Parallax2D
 CollisionShape2D
@@ -5,10 +9,7 @@ RigidBody2D
 Area2D
 Timer
 StaticBody2D
-Node
-CanvasLayer
 NavigationRegion2D
 NavigationAgent2D
 RayCast2D
 CameraRegion2D
-Camera2D

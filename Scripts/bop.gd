@@ -182,4 +182,5 @@ func handle_enemy_animation() -> void:
 func take_poison_damage(damage_taken : int) -> void:
 	health -= damage_taken
 	if health <= 0:
-		queue_free()
+		get_parent().get_node("BopSpawner").enemies_needed_to_die -= 1
+		call_deferred("queue_free")
