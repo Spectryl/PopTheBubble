@@ -1,0 +1,74 @@
+[gd_scene load_steps=5 format=3 uid="uid://vgxq6ji6011l"]
+
+[ext_resource type="LabelSettings" uid="uid://v4wspbbfbsx3" path="res://Resources/LabelFontSettings.tres" id="1_qxyun"]
+[ext_resource type="Script" uid="uid://07b1j46w4gd5" path="res://Scripts/Main Menu/title_screen.gd" id="1_uilra"]
+[ext_resource type="Theme" uid="uid://1kr4fl0cxyvy" path="res://Resources/ButtonTheme.tres" id="2_uilra"]
+[ext_resource type="PackedScene" uid="uid://dloqj1joi8dqa" path="res://Scenes/WebComponentDelete.tscn" id="3_gbrb2"]
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_uilra")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_right = 1285.0
+offset_bottom = 698.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Pop The Bubble"
+label_settings = ExtResource("1_qxyun")
+
+[node name="PlayButton" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_uilra")
+theme_type_variation = &"FlatButton"
+text = "Play"
+
+[node name="OptionsButton" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_uilra")
+theme_type_variation = &"FlatButton"
+theme_override_constants/outline_size = 5
+text = "Options"
+
+[node name="CreditsButton" type="Button" parent="MarginContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+theme = ExtResource("2_uilra")
+theme_type_variation = &"FlatButton"
+text = "Credits"
+
+[node name="QuitButton" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_uilra")
+theme_type_variation = &"FlatButton"
+text = "Quit"
+
+[node name="WebComponentDelete" parent="MarginContainer/VBoxContainer/QuitButton" instance=ExtResource("3_gbrb2")]
+
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/PlayButton" to="." method="_on_play_button_mouse_entered"]
+[connection signal="mouse_exited" from="MarginContainer/VBoxContainer/PlayButton" to="." method="_on_play_button_mouse_exited"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/OptionsButton" to="." method="_on_options_button_mouse_entered"]
+[connection signal="mouse_exited" from="MarginContainer/VBoxContainer/OptionsButton" to="." method="_on_options_button_mouse_exited"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_mouse_entered"]
+[connection signal="mouse_exited" from="MarginContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_mouse_exited"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

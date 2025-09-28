@@ -16,3 +16,7 @@ res://Scripts/needle.gd
 res://Scripts/Main/main_master.gd
 res://Scripts/Spawner.gd
 res://Scenes/Main Menu/BopSpawner.gd
+res://Scenes/Main Menu/MainMenuMaster.tscn
+res://Scripts/Main Menu/main_menu_master.gd
+res://Scripts/Main Menu/title_screen.gd
+res://Scenes/Main Menu/title_screen.tscn
