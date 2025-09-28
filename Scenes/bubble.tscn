@@ -41,7 +41,6 @@ DELETE_TIMER_LENGTH = 1.01
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(1, -65)
-scale = Vector2(0.125, 0.125)
 texture = ExtResource("1_fu76k")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -1,4 +1,11 @@
-res://Scenes/player.tscn
+res://Scenes/world_boundary.tscn
 res://Resources/ButtonTheme.tres
 res://Resources/LabelFontSettings.tres
-res://Scripts/player.gd
+res://Scenes/Main Menu/MainMaster.tscn
+res://addons/TileMapDual/CursorDual.gd
+res://addons/TileMapDual/plugin.gd
+res://addons/TileMapDual/TileMapDual.gd
+res://addons/TileMapDual/TerrainPreset.gd
+res://Scripts/Main/main_master.gd
+res://Scenes/player.tscn
+res://Scenes/bubble.tscn

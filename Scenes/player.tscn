@@ -3344,10 +3344,10 @@ transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_v0iea")
-SPEED = 100
-ACCELERATION = 8
+SPEED = 350
+ACCELERATION = 16
 FRICTION = 21
-JUMP_POWER = 500
+JUMP_POWER = 650
 FAST_FALL_SPEED = 50
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="CameraTransition" load_steps=5 format=3 uid="uid://d0d13c2dkbh0w"]
+
+[ext_resource type="Script" uid="uid://uf46ia8jcndp" path="res://addons/cameraregion2d/CameraTransition.gd" id="1_yh2pg"]
+
+[sub_resource type="Curve" id="Curve_62m4y"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 1.4, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Curve_qttnr"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Curve_wwo8s"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[resource]
+script = ExtResource("1_yh2pg")
+position = SubResource("Curve_62m4y")
+zoom = SubResource("Curve_wwo8s")
+rotation = SubResource("Curve_qttnr")
+metadata/_custom_type_script = "uid://uf46ia8jcndp"
