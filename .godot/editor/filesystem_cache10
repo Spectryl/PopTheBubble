@@ -1,6 +1,6 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1758864457
-icon.svg::CompressedTexture2D::8621876208959884478::1758825225::1758825237::1::::<><><>0<>0<>cefe94c281ceaa9e3b1e21a43d714801<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://::1759098548
+export_presets.cfg::TextFile::-1::1759098540::0::1::::<><><>0<>0<><>::
 ::res://addons/::1759018446
 ::res://addons/cameraregion2d/::1758864824
 CameraRegion2D.gd::GDScript::9217896240216134155::1758864823::0::1::::CameraRegion2D<>Node2D<><>0<>1<><>::
@@ -61,7 +61,7 @@ TileMap.png::CompressedTexture2D::8821907855507356816::1759017993::1759017995::1
 ::res://Art/Project Files/::1759078862
 ::res://Audio/::1759096029
 default_bus_layout.tres::AudioBusLayout::8189915512150410929::1759096029::0::1::::<><><>0<>0<><>::
-::res://Audio/Music/::1759097076
+::res://Audio/Music/::1759097080
 Kim Lightyear - Legends.mp3::AudioStreamMP3::6771868856191754718::1759097064::1759097143::1::::<><><>0<>0<>6538ab3fbec60cea8c086e8e52d41673<>res://.godot/imported/Kim Lightyear - Legends.mp3-287b1209e728d996cff4e4e0679c1f6e.mp3str::
 ::res://Audio/Sound/::1759093963
 03_Step_grass_03.wav::AudioStreamWAV::2283037559276613590::1759091537::1759091538::1::::<><><>0<>0<>a994dd722d2b41c6f1ec94716e8d2275<>res://.godot/imported/03_Step_grass_03.wav-e1d0a47b4ee12a0e507cc6f90cc08bc2.sample::
@@ -75,6 +75,10 @@ pop2.ogg::AudioStreamOggVorbis::8556366935698642303::1759090033::1759090036::1::
 pop3.ogg::AudioStreamOggVorbis::891771442934422970::1759090033::1759090036::1::::<><><>0<>0<>489b6525bbe912aad66d7ff71fdc3347<>res://.godot/imported/pop3.ogg-39cf1dd0c381015525d7142bf3eb88c5.oggvorbisstr::
 ::res://Font/::1758838308
 RoadRage-Regular.ttf::FontFile::7125582611857078114::1757812810::1758946675::1::::<><><>0<>0<>51972aad214998168edb3a6b5761f8ea<>res://.godot/imported/RoadRage-Regular.ttf-8a244bd978e4d64f0995c4eda66b7565.fontdata::
+::res://index/::1759098539
+index.apple-touch-icon.png::CompressedTexture2D::3379733921491980952::1759098539::1759098783::1::::<><><>0<>0<>0250475c0823d98da30758b5825dafda<>res://.godot/imported/index.apple-touch-icon.png-7b995845c0a478c87d24a0118989ba83.ctex::
+index.icon.png::CompressedTexture2D::2430040794540933257::1759098539::1759098783::1::::<><><>0<>0<>a24523bf41d83cca163035a50120ddb8<>res://.godot/imported/index.icon.png-9b91fe2628993b35c8d82c5ec7ac5d53.ctex::
+index.png::CompressedTexture2D::8763717032307981871::1759098539::1759098783::1::::<><><>0<>0<>43cfad8bc625ffbddd230e6b0e7589fe<>res://.godot/imported/index.png-d646afb8957734b59142c2e7c2ce3eb2.ctex::
 ::res://Resources/::1759090771
 Background.tres::CompressedTexture2D::8783378933304567830::1759027151::0::1::::<><><>0<>0<><>::
 BopTextureAtlus.tres::CompressedTexture2D::7571371561247562810::1759023427::0::1::::<><><>0<>0<><>::
@@ -83,7 +87,7 @@ CameraTransition.tres::Resource/CameraTransition::8921805066239694668::175907464
 LabelFontSettings.tres::LabelSettings::1535201378844798506::1759090807::0::1::::<><><>0<>0<><>::
 NewButtonTheme.tres::Theme::3087100848328825437::1758946954::0::1::::<><><>0<>0<><>::uid://c8rxkmcj87xvm::::res://Font/RoadRage-Regular.ttf
 PopTextureAtlus.tres::CompressedTexture2D::6741573538368650080::1759076739::0::1::::<><><>0<>0<><>::
-CreditsLabelSettings.tres::LabelSettings::170557814400337066::1759091029::0::1::::<><><>0<>0<><>::
+CreditsLabelSettings.tres::LabelSettings::170557814400337066::1759097190::0::1::::<><><>0<>0<><>::
 ::res://Scenes/::1759078834
 Bop.tscn::PackedScene::2184941018627654506::1759076714::0::1::::<><><>0<>0<><>::uid://df4vnbibkxolu::::res://Resources/BopTextureAtlus.tres<>uid://rumq16tppnbp::::res://Scripts/bop.gd<>uid://crk58qobvqe5h::::res://Art/Characters/Bop.png
 bubble.tscn::PackedScene::8626977304033175999::1759076329::0::1::::<><><>0<>0<><>::uid://chy865v3wn1vf::::res://Scripts/bubble.gd<>uid://dq8qnx6rw0afj::::res://Art/Bubbles/Bubble.png<>uid://ckrh1u6mu618i::::res://Art/Bubbles/SmallBubble.png
@@ -114,14 +118,14 @@ vine_3.tscn::PackedScene::5678404030648871660::1759027597::0::1::::<><><>0<>0<><
 vine_4.tscn::PackedScene::3043655738223327694::1759027615::0::1::::<><><>0<>0<><>::uid://dxey75y8u1a4m::::res://Resources/Background.tres
 ::res://Scenes/Main/::1759089850
 GameMaster.tscn::PackedScene::1026301255775248041::1758838700::0::1::::<><><>0<>0<><>::uid://bg6s2oxmnv8vx::::res://Scripts/Main/game_master.gd
-sound_master.tscn::PackedScene::2233549767564470791::1759094224::0::1::::<><><>0<>0<><>::uid://c4roympdao1og::::res://Scripts/Main/sound_master.gd<>uid://b7omq1xd4oagf::::res://Audio/Sound/pop1.ogg<>uid://dt51d4aldir00::::res://Audio/Sound/pop2.ogg<>uid://mx8l0iv78rck::::res://Audio/Sound/pop3.ogg<>uid://ct2y88kj3hxpr::::res://Audio/Sound/45_Landing_01.wav<>uid://7r6kbcpxnm03::::res://Audio/Sound/03_Step_grass_03.wav<>uid://cnefulmvoxm3e::::res://Audio/Sound/30_Jump_03.wav<>uid://cy6echg7onsn::::res://Audio/Sound/56_Attack_03.ogg<>uid://d2vn6f68h33q5::::res://Audio/Sound/88_Teleport_02.wav<>uid://bvo8qiifi08ci::::res://Audio/Sound/61_Hit_03.wav
+sound_master.tscn::PackedScene::2233549767564470791::1759097192::0::1::::<><><>0<>0<><>::uid://c4roympdao1og::::res://Scripts/Main/sound_master.gd<>uid://b7omq1xd4oagf::::res://Audio/Sound/pop1.ogg<>uid://dt51d4aldir00::::res://Audio/Sound/pop2.ogg<>uid://mx8l0iv78rck::::res://Audio/Sound/pop3.ogg<>uid://ct2y88kj3hxpr::::res://Audio/Sound/45_Landing_01.wav<>uid://7r6kbcpxnm03::::res://Audio/Sound/03_Step_grass_03.wav<>uid://cnefulmvoxm3e::::res://Audio/Sound/30_Jump_03.wav<>uid://cy6echg7onsn::::res://Audio/Sound/56_Attack_03.ogg<>uid://d2vn6f68h33q5::::res://Audio/Sound/88_Teleport_02.wav<>uid://bvo8qiifi08ci::::res://Audio/Sound/61_Hit_03.wav<>uid://c3qlxqopj1bes::::res://Audio/Music/Kim Lightyear - Legends.mp3
 ::res://Scenes/Main Menu/::1759094176
 MainMaster.tscn::PackedScene::7248035450114292791::1759090836::0::1::::<><><>0<>0<><>::uid://dxyyr1ix1p24e::::res://Scripts/Main/main_master.gd<>uid://hgpssyy78rr::::res://Scenes/world_boundary.tscn<>uid://b58wkc4e6ygew::::res://Scenes/Main Menu/BopSpawner.gd<>uid://2xr5r7dti6l1::::res://Scenes/player.tscn<>uid://dquk3viy77axe::::res://Art/Misc/PrototypeTilemap128x128.png<>uid://mv7ijtpb4gwj::::res://addons/cameraregion2d/CameraRegionController2D.gd<>uid://d4lhn0nt4wcr8::::res://addons/cameraregion2d/CameraRegion2D.gd<>uid://d0d13c2dkbh0w::::res://Resources/CameraTransition.tres<>uid://caf5t3qaow1g8::::res://Scenes/BG/Tree.tscn<>uid://cmqgypujone22::::res://Scenes/BG/big_vine.tscn<>uid://d0fgsr7irpop2::::res://Scenes/BG/moon.tscn<>uid://dondsor8nxu5::::res://Scenes/BG/vine_1.tscn<>uid://doacomwcpsej8::::res://Scenes/BG/mushroom_1.tscn<>uid://6fjvxl3qslgs::::res://Scenes/BG/big_bush.tscn<>uid://bdeetcx3nuga0::::res://Scenes/BG/mushroom_3.tscn<>uid://bb52y27n41nb::::res://Scenes/BG/mushroom_2.tscn<>uid://dxgwhbgscxinq::::res://Scenes/BG/root.tscn<>uid://bm6cum7gdgmjq::::res://Scenes/BG/smallbush.tscn<>uid://dwggek7cw0s38::::res://Scenes/BG/vine_2.tscn<>uid://crpvyxtxql5yk::::res://Scenes/BG/rock_2.tscn<>uid://g6gufa7le5t1::::res://Scenes/new_bush.tscn<>uid://v4wspbbfbsx3::::res://Resources/LabelFontSettings.tres
 MainMenuMaster.tscn::PackedScene::6797043151535821250::1759087578::0::1::::<><><>0<>0<><>::uid://bbqu8r7bxve6h::::res://Scripts/Main Menu/main_menu_master.gd
 BopSpawner.gd::GDScript::4561564240568103206::1759094176::0::1::::<>Node<><>0<>0<><>::
 options.tscn::PackedScene::2066915626922225426::1759096700::0::1::::<><><>0<>0<><>::uid://bhpyi2imaul76::::res://Scripts/Main Menu/options.gd<>uid://1kr4fl0cxyvy::::res://Resources/ButtonTheme.tres<>uid://v4wspbbfbsx3::::res://Resources/LabelFontSettings.tres
-credits.tscn::PackedScene::575721283447657264::1759096700::0::1::::<><><>0<>0<><>::uid://cc17hsg8nt25b::::res://Scripts/Main Menu/credits.gd<>uid://1kr4fl0cxyvy::::res://Resources/ButtonTheme.tres<>uid://v4wspbbfbsx3::::res://Resources/LabelFontSettings.tres<>uid://covceaa3sd3w::::res://Resources/CreditsLabelSettings.tres
-title_screen.tscn::PackedScene::1487778688992163295::1759091082::0::1::::<><><>0<>0<><>::uid://v4wspbbfbsx3::::res://Resources/LabelFontSettings.tres<>uid://07b1j46w4gd5::::res://Scripts/Main Menu/title_screen.gd<>uid://1kr4fl0cxyvy::::res://Resources/ButtonTheme.tres<>uid://dloqj1joi8dqa::::res://Scenes/WebComponentDelete.tscn
+credits.tscn::PackedScene::575721283447657264::1759098504::0::1::::<><><>0<>0<><>::uid://cc17hsg8nt25b::::res://Scripts/Main Menu/credits.gd<>uid://1kr4fl0cxyvy::::res://Resources/ButtonTheme.tres<>uid://v4wspbbfbsx3::::res://Resources/LabelFontSettings.tres<>uid://covceaa3sd3w::::res://Resources/CreditsLabelSettings.tres
+title_screen.tscn::PackedScene::1487778688992163295::1759097340::0::1::::<><><>0<>0<><>::uid://v4wspbbfbsx3::::res://Resources/LabelFontSettings.tres<>uid://07b1j46w4gd5::::res://Scripts/Main Menu/title_screen.gd<>uid://1kr4fl0cxyvy::::res://Resources/ButtonTheme.tres<>uid://dloqj1joi8dqa::::res://Scenes/WebComponentDelete.tscn
 ::res://Scenes/UI/::1758825573
 ::res://Scripts/::1759094312
 bop.gd::GDScript::1235256487923385325::1759093815::0::1::::<>CharacterBody2D<><>0<>0<><>::
@@ -131,12 +135,12 @@ orange_bubble.gd::GDScript::7431595674616651428::1759094079::0::1::::OrangeBubbl
 needle.gd::GDScript::92019655445592720::1759078555::0::1::::<>RigidBody2D<><>0<>0<><>::
 Spawner.gd::GDScript::9033657528212499841::1759086089::0::1::::Spawner<>Node<><>0<>0<><>::
 web_component_delete.gd::GDScript::2433372814702372422::1758993056::0::1::::<>Node<><>0<>0<><>::
-::res://Scripts/Main/::1759094265
+::res://Scripts/Main/::1759097167
 game_master.gd::GDScript::2872691349623242269::1758861656::0::1::::GameMaster<>Node<><>0<>0<><>::
 main_master.gd::GDScript::8824639466220181314::1759085978::0::1::::<>Node2D<><>0<>0<><>::
-sound_master.gd::GDScript::6844305805249760474::1759094265::0::1::::<>Node<><>0<>0<><>::
-::res://Scripts/Main Menu/::1759096834
-main_menu_master.gd::GDScript::2490913784857976685::1759096833::0::1::::<>Control<><>0<>0<><>::
+sound_master.gd::GDScript::6844305805249760474::1759097167::0::1::::<>Node<><>0<>0<><>::
+::res://Scripts/Main Menu/::1759097254
+main_menu_master.gd::GDScript::2490913784857976685::1759097254::0::1::::<>Control<><>0<>0<><>::
 options.gd::GDScript::2910181180682772907::1759096653::0::1::::<>Control<><>0<>0<><>::
 credits.gd::GDScript::4968849276800331633::1759096700::0::1::::<>Control<><>0<>0<><>::
 title_screen.gd::GDScript::1820888845663539972::1759096834::0::1::::<>Control<><>0<>0<><>::

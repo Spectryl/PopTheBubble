@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=4 uid="uid://dbjac5fnfs35l"]
+[gd_scene load_steps=27 format=4 uid="uid://dbjac5fnfs35l"]
 
 [ext_resource type="Script" uid="uid://dxyyr1ix1p24e" path="res://Scripts/Main/main_master.gd" id="1_tsgew"]
 [ext_resource type="PackedScene" uid="uid://hgpssyy78rr" path="res://Scenes/world_boundary.tscn" id="2_kmc7b"]
@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://crpvyxtxql5yk" path="res://Scenes/BG/rock_2.tscn" id="16_urkod"]
 [ext_resource type="PackedScene" uid="uid://g6gufa7le5t1" path="res://Scenes/new_bush.tscn" id="21_p3uye"]
 [ext_resource type="LabelSettings" uid="uid://v4wspbbfbsx3" path="res://Resources/LabelFontSettings.tres" id="22_xccoq"]
+[ext_resource type="Theme" uid="uid://1kr4fl0cxyvy" path="res://Resources/ButtonTheme.tres" id="23_2qgol"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5e0m0"]
 texture = ExtResource("4_360sw")
@@ -2077,7 +2078,7 @@ layer = 2
 self_modulate = Color(1, 1, 1, 0.9019608)
 offset_left = 17.0
 offset_top = -1.0
-offset_right = 242.0
+offset_right = 617.0
 offset_bottom = 131.0
 text = "Wave: 1"
 label_settings = ExtResource("22_xccoq")
@@ -2086,7 +2087,36 @@ label_settings = ExtResource("22_xccoq")
 self_modulate = Color(1, 1, 1, 0.9019608)
 offset_left = 8.0
 offset_top = 90.0
-offset_right = 429.0
+offset_right = 608.0
 offset_bottom = 222.0
 text = "Enemies Left:"
 label_settings = ExtResource("22_xccoq")
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Panel" type="Panel" parent="CanvasLayer2"]
+self_modulate = Color(1, 1, 1, 0.76862746)
+offset_left = 52.0
+offset_top = 56.0
+offset_right = 1219.0
+offset_bottom = 653.0
+theme = ExtResource("23_2qgol")
+
+[node name="Label" type="Label" parent="CanvasLayer2"]
+offset_left = 438.0
+offset_top = 57.0
+offset_right = 720.0
+offset_bottom = 189.0
+text = "You Died!"
+label_settings = ExtResource("22_xccoq")
+
+[node name="QuitButton" type="Button" parent="CanvasLayer2"]
+offset_left = 373.0
+offset_top = 325.0
+offset_right = 849.0
+offset_bottom = 422.0
+theme = ExtResource("23_2qgol")
+text = "Return to Main Menu"
+
+[connection signal="pressed" from="CanvasLayer2/QuitButton" to="." method="_on_quit_button_pressed"]

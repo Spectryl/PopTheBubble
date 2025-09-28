@@ -9,6 +9,7 @@ func spawn_new_enemy() -> void:
 	for i in range(current_wave):
 		new_enemy = BOP_SCENE.instantiate()
 		new_enemy.global_position = Vector2(randi_range(1000,3000), 385)
+		new_enemy.health = 100 + randi_range(current_wave * 10, current_wave * 20)
 		SoundMaster.play(SoundMaster.SFX.TELEPORT)
 		WORLD.add_child(new_enemy)
 	enemies_needed_to_die = current_wave

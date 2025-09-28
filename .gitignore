@@ -8,3 +8,9 @@
 *.log
 *.cfg
 *.bin
+html/
+index/
+*.cfg
+*.wasm
+*.scn
+.godot/

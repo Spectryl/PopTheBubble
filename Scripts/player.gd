@@ -35,6 +35,7 @@ const NEEDLE_SCENE  = preload("res://Scenes/needle.tscn")
 
 
 func _physics_process(delta: float) -> void:
+	if is_dead: return
 	handle_gravity(delta)
 	handle_landing()
 	handle_player_movement(delta)
@@ -130,4 +131,12 @@ func take_poison_damage(damage_taken : int) -> void:
 	health -= damage_taken
 	SoundMaster.play(SoundMaster.SFX.HURT)
 	if health <= 0:
-		queue_free()
+		take_death()
+
+func take_death() -> void:
+	is_dead = true
+	$CPUParticles2D.emitting = true
+	$Rig.visible = false
+	$CollisionShape2D.set_deferred("disabled",true)
+	get_parent().get_node("CanvasLayer1").visible = false
+	get_parent().get_node("CanvasLayer2").visible = true

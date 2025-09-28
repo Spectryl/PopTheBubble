@@ -25,7 +25,7 @@ const PATH_POINT_RADIUS = 30.0
 const JUMP_THRESHOLD = 50.0 
 const DROP_THRESHOLD = 75.0 
 var target_node: CharacterBody2D 
-
+var delete_timer : Timer
 @onready var WORLD = get_parent()
 @onready var ANIMATION_PLAYER = $AnimationPlayer
 @onready var ANIMATION_TREE: AnimationTree = $AnimationTree
@@ -53,9 +53,15 @@ func _ready() -> void:
 	current_search_place = global_position
 	
 	NAV_AGENT.avoidance_enabled = true
+	delete_timer = Timer.new()
+	delete_timer .wait_time = 1.01
+	delete_timer .one_shot = true
+	add_child(delete_timer)
+	delete_timer .timeout.connect(_on_delete_timer_timeout)
 
 
 func _physics_process(delta: float) -> void:
+	if is_dead: return
 	handle_gravity(delta)
 	handle_landing()
 	
@@ -186,4 +192,12 @@ func take_poison_damage(damage_taken : int) -> void:
 	health -= damage_taken
 	if health <= 0:
 		get_parent().get_node("BopSpawner").enemies_needed_to_die -= 1
-		call_deferred("queue_free")
+		take_death()
+func take_death() -> void:
+	is_dead = true
+	$CPUParticles2D.emitting = true
+	$Rig.visible = false
+	$CollisionShape2D.set_deferred("disabled",true)
+	delete_timer.start()
+func _on_delete_timer_timeout() -> void:
+	call_deferred("queue_free")
