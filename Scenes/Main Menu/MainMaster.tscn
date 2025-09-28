@@ -1348,6 +1348,7 @@ z_index = -8
 position = Vector2(1981, 205)
 
 [node name="Parallax2D2" type="Parallax2D" parent="."]
+z_index = 1
 
 [node name="NewBush" parent="Parallax2D2" instance=ExtResource("21_p3uye")]
 position = Vector2(47, 902)
