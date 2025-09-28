@@ -1,6 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://bpfyklb7d7am5"]
+[gd_scene load_steps=10 format=3 uid="uid://bpfyklb7d7am5"]
 
-[ext_resource type="Script" uid="uid://chy865v3wn1vf" path="res://Scripts/bubble.gd" id="1_uq4rs"]
+[ext_resource type="Script" uid="uid://dd46kbalne8vg" path="res://Scripts/orange_bubble.gd" id="1_uq4rs"]
 [ext_resource type="Texture2D" uid="uid://c227e0rfrlybv" path="res://Art/Bubbles/OrangeBubble.png" id="2_uq4rs"]
 [ext_resource type="Texture2D" uid="uid://58ry5h30ab7t" path="res://Art/Bubbles/SmallOrangeBubble.png" id="3_ibttk"]
 
@@ -24,9 +24,11 @@ point_count = 2
 _data = [Vector2(0.027777776, 0.3595506), 0.0, 0.0, 0, 0, Vector2(0.5333333, 0.056179762), 0.0, 0.0, 0, 0, Vector2(0.98888886, 0.022471905), 0.0, 0.0, 0, 0]
 point_count = 3
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_uq4rs"]
+radius = 65.12296
+
 [node name="OrangeBubble" type="RigidBody2D"]
-collision_layer = 6
-collision_mask = 6
+collision_layer = 4
 physics_material_override = SubResource("PhysicsMaterial_amq2t")
 gravity_scale = 0.0
 contact_monitor = true
@@ -34,10 +36,11 @@ max_contacts_reported = 10
 linear_damp = 0.1
 angular_velocity = 1.3962634
 script = ExtResource("1_uq4rs")
-BUBBLE_SPEED = 200
-POISON_DAMAGE = 5
-TIMER_LENGTH = 5.0
-DELETE_TIMER_LENGTH = 1.01
+BUBBLE_SPEED = 150
+POISON_DAMAGE = 10
+POISON_INTERVAL = 1.0
+TIMER_LENGTH = 2.5
+DELETE_TIMER_LENGTH = 1.1
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(1, -65)
@@ -66,4 +69,14 @@ angular_velocity_curve = SubResource("Curve_0iu24")
 linear_accel_curve = SubResource("Curve_7vocm")
 scale_amount_curve = SubResource("Curve_35n32")
 
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(2, -65)
+shape = SubResource("CircleShape2D_uq4rs")
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_body_exited"]

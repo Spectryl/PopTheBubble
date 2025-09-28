@@ -17,7 +17,7 @@ var looking_left : bool
 var looking_right : bool
 var on_attack_cooldown : bool = false
 
-var health : int
+var health : int = 100
 var max_health : int 
 
 @onready var WORLD = get_parent()
@@ -96,3 +96,8 @@ func handle_player_animation() -> void:
 
 func _on_attack_cooldown_timer_timeout() -> void:
 	on_attack_cooldown = false
+
+func take_poison_damage(damage_taken : int) -> void:
+	health -= damage_taken
+	if health <= 0:
+		queue_free()

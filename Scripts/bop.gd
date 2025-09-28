@@ -18,7 +18,7 @@ var looking_left : bool = true
 var looking_right : bool = false
 var on_attack_cooldown : bool = false
 
-var health : int
+@export var health : float = 100
 var max_health : int 
 
 const PATH_POINT_RADIUS = 30.0 
@@ -178,3 +178,8 @@ func handle_enemy_animation() -> void:
 	if not is_jumping and not is_falling and not ANIMATION_PLAYER.current_animation == "attacking":
 		if abs(velocity.x) > 1 and is_on_floor():ANIMATION_PLAYER.play("walking")
 		else:ANIMATION_PLAYER.play("idle")
+
+func take_poison_damage(damage_taken : int) -> void:
+	health -= damage_taken
+	if health <= 0:
+		queue_free()

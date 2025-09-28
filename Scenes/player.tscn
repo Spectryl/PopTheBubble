@@ -3343,6 +3343,7 @@ states/landing/position = Vector2(303, 225)
 transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_3smsa"), "jump_squat", "jumping", SubResource("AnimationNodeStateMachineTransition_8erm5"), "idle", "jump_squat", SubResource("AnimationNodeStateMachineTransition_f1ek2"), "falling", "landing", SubResource("AnimationNodeStateMachineTransition_tx1dd"), "landing", "idle", SubResource("AnimationNodeStateMachineTransition_gymyn"), "jumping", "falling", SubResource("AnimationNodeStateMachineTransition_pu2lt")]
 
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
+collision_layer = 2
 script = ExtResource("1_v0iea")
 SPEED = 350
 ACCELERATION = 16

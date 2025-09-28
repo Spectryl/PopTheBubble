@@ -1,4 +1,4 @@
-class_name Bubble
+class_name OrangeBubble
 extends RigidBody2D 
 
 @export var BUBBLE_SPEED : int
@@ -30,7 +30,7 @@ func _ready() -> void:
 	active_timer.start()
 
 func _on_body_entered(body: Node) -> void:
-	if body.is_in_group("Poisonable") and not bodies_inside.has(body):
+	if body.is_in_group("Player") and not bodies_inside.has(body):
 		bodies_inside.append(body)
 
 func _on_body_exited(body: Node) -> void:

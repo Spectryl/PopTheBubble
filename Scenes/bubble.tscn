@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://du58b5qnget32"]
+[gd_scene load_steps=10 format=3 uid="uid://du58b5qnget32"]
 
 [ext_resource type="Script" uid="uid://chy865v3wn1vf" path="res://Scripts/bubble.gd" id="1_amq2t"]
 [ext_resource type="Texture2D" uid="uid://dq8qnx6rw0afj" path="res://Art/Bubbles/Bubble.png" id="1_fu76k"]
@@ -24,9 +24,11 @@ point_count = 2
 _data = [Vector2(0.027777776, 0.3595506), 0.0, 0.0, 0, 0, Vector2(0.5333333, 0.056179762), 0.0, 0.0, 0, 0, Vector2(0.98888886, 0.022471905), 0.0, 0.0, 0, 0]
 point_count = 3
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_i1mt7"]
+radius = 65.12296
+
 [node name="Bubble" type="RigidBody2D"]
-collision_layer = 6
-collision_mask = 6
+collision_layer = 4
 physics_material_override = SubResource("PhysicsMaterial_amq2t")
 gravity_scale = 0.0
 contact_monitor = true
@@ -35,7 +37,7 @@ linear_damp = 0.1
 angular_velocity = 1.3962634
 script = ExtResource("1_amq2t")
 BUBBLE_SPEED = 200
-POISON_DAMAGE = 5
+POISON_DAMAGE = 35
 TIMER_LENGTH = 5.0
 DELETE_TIMER_LENGTH = 1.01
 
@@ -66,4 +68,13 @@ angular_velocity_curve = SubResource("Curve_0iu24")
 linear_accel_curve = SubResource("Curve_7vocm")
 scale_amount_curve = SubResource("Curve_35n32")
 
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(2, -65)
+shape = SubResource("CircleShape2D_i1mt7")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_body_exited"]

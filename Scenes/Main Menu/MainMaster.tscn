@@ -403,8 +403,8 @@ texture_region_size = Vector2i(128, 128)
 
 [sub_resource type="TileSet" id="TileSet_jwgr8"]
 tile_size = Vector2i(128, 128)
-physics_layer_0/collision_layer = 5
-physics_layer_0/collision_mask = 5
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 6
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "ahh"
 terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
@@ -1796,27 +1796,3 @@ position = Vector2(900, 156)
 [node name="root8" parent="Parallax2D5" instance=ExtResource("11_wpp3k")]
 z_index = -8
 position = Vector2(1981, 205)
-
-[node name="Bop2" parent="." instance=ExtResource("3_qttnr")]
-position = Vector2(2778, 469)
-JUMP_POWER = 1000
-
-[node name="Bop3" parent="." instance=ExtResource("3_qttnr")]
-position = Vector2(2778, 469)
-JUMP_POWER = 1000
-
-[node name="Bop4" parent="." instance=ExtResource("3_qttnr")]
-position = Vector2(2778, 469)
-JUMP_POWER = 1000
-
-[node name="Bop5" parent="." instance=ExtResource("3_qttnr")]
-position = Vector2(2778, 469)
-JUMP_POWER = 1000
-
-[node name="Bop6" parent="." instance=ExtResource("3_qttnr")]
-position = Vector2(2778, 469)
-JUMP_POWER = 1000
-
-[node name="Bop7" parent="." instance=ExtResource("3_qttnr")]
-position = Vector2(2684, 468)
-JUMP_POWER = 1000

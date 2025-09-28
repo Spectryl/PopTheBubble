@@ -1,17 +1,12 @@
-res://Scenes/Bop.tscn
+res://Scripts/bop.gd
+res://Scenes/bubble.tscn
 res://Resources/ButtonTheme.tres
 res://Resources/LabelFontSettings.tres
 res://Resources/CameraTransition.tres
-res://Scripts/bop.gd
+res://Scenes/Bop.tscn
+res://Scripts/bubble.gd
 res://Scenes/Main Menu/MainMaster.tscn
-res://Scenes/player.tscn
-res://Scenes/BG/Tree.tscn
-res://Scenes/BG/mushroom_1.tscn
-res://Scenes/BG/mushroom_2.tscn
-res://Scenes/BG/mushroom_3.tscn
-res://Scenes/BG/smallbush.tscn
-res://Scenes/BG/vine_4.tscn
-res://Scenes/BG/Rock1.tscn
-res://Scenes/BG/rock_4.tscn
+res://Scripts/orange_bubble.gd
+res://Scripts/player.gd
 res://Scenes/orange_bubble.tscn
-res://Scenes/bubble.tscn
+res://Scenes/player.tscn
