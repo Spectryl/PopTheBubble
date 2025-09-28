@@ -1,10 +1,10 @@
-CollisionShape2D
 Sprite2D
+Parallax2D
+CollisionShape2D
 RigidBody2D
 Area2D
 Timer
 StaticBody2D
-Parallax2D
 Node
 CanvasLayer
 NavigationRegion2D

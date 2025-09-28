@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://dbjac5fnfs35l"]
+[gd_scene load_steps=25 format=4 uid="uid://dbjac5fnfs35l"]
 
 [ext_resource type="Script" uid="uid://dxyyr1ix1p24e" path="res://Scripts/Main/main_master.gd" id="1_tsgew"]
 [ext_resource type="PackedScene" uid="uid://hgpssyy78rr" path="res://Scenes/world_boundary.tscn" id="2_kmc7b"]
@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://bm6cum7gdgmjq" path="res://Scenes/BG/smallbush.tscn" id="12_oarfb"]
 [ext_resource type="PackedScene" uid="uid://dwggek7cw0s38" path="res://Scenes/BG/vine_2.tscn" id="13_oarfb"]
 [ext_resource type="PackedScene" uid="uid://crpvyxtxql5yk" path="res://Scenes/BG/rock_2.tscn" id="16_urkod"]
+[ext_resource type="PackedScene" uid="uid://g6gufa7le5t1" path="res://Scenes/new_bush.tscn" id="21_p3uye"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5e0m0"]
 texture = ExtResource("4_360sw")
@@ -453,458 +454,6 @@ visible = false
 visible = false
 navigation_polygon = SubResource("NavigationPolygon_qttnr")
 
-[node name="Parallax2D2" type="Parallax2D" parent="."]
-scroll_scale = Vector2(0.8, 0.8)
-follow_viewport = false
-ignore_camera_scroll = true
-
-[node name="BigBush" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(95, 919)
-
-[node name="BigBush" parent="Parallax2D2/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(1151, -67)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(175, -12)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(-135, -20)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(150, -13)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush/BigBush/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(-92, -147)
-scale = Vector2(0.59, 1)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(-1.6949158, 65)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(-64.406784, 81)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(-155.93222, 6)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(-866.1017, -223)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(-157.62714, 0)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(-113.559326, 7)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(-149.15256, 1)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(-13.559326, -48)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(174.57628, 0)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(174.57628, -4)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(93.22034, 3)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(28.813553, 49)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(-98.305084, 19)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(-150.84747, -6)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(-216.94916, 10)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(-55.932205, -47)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(62.71187, -29)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(174.57628, -4)
-
-[node name="BigBush" parent="Parallax2D2/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush/BigBush" instance=ExtResource("10_wwo8s")]
-position = Vector2(181.35593, 5)
-
-[node name="BigBush2" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(275, 925)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(1475, -317)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(180, -4)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(46, -59)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-122, -10)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-88, 6)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(492, 60)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(174, 6)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(57, 6)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(51, -52)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-73, -29)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-192, -10)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(487, 93)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(180, -4)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(60, -1)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(32, -72)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-119, -8)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-132, 8)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(531, 255)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(180, -4)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-2, 38)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-174, 15)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(69, -90)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(16, -74)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(531, -61)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(70, -7)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(28, -63)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-100, -5)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(509, -7)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(113, -3)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-9, 71)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-111, -1)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(505, 236)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(5, -55)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-11, -62)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(7, -61)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(10, -49)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-29, -53)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(9, -59)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-13, -72)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-1, -66)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(7, -53)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(9, -53)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-11, -78)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(4, -61)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(5, -57)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-27, -59)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-4899, 927)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-13, -75)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-23, -68)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-13, -65)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-18, -63)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(6, -68)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-35, -75)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(24, -75)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(6, -84)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-2, -84)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-9, -72)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(17, -70)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(17, -56)
-
-[node name="BigBush2" parent="Parallax2D2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2/BigBush2" instance=ExtResource("10_wwo8s")]
-position = Vector2(-16, -56)
-
-[node name="BigBush3" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(479, 913)
-
-[node name="BigBush4" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(624, 926)
-
-[node name="BigBush4" parent="Parallax2D2/BigBush4" instance=ExtResource("10_wwo8s")]
-position = Vector2(3565, -121)
-
-[node name="BigBush4" parent="Parallax2D2/BigBush4/BigBush4" instance=ExtResource("10_wwo8s")]
-position = Vector2(97, -3)
-
-[node name="BigBush4" parent="Parallax2D2/BigBush4/BigBush4/BigBush4" instance=ExtResource("10_wwo8s")]
-position = Vector2(2, 34)
-
-[node name="BigBush4" parent="Parallax2D2/BigBush4/BigBush4/BigBush4/BigBush4" instance=ExtResource("10_wwo8s")]
-position = Vector2(-82, 10)
-
-[node name="BigBush5" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(819, 913)
-
-[node name="BigBush6" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(158, 935)
-
-[node name="BigBush7" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(350, 944)
-
-[node name="BigBush8" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(1022, 917)
-
-[node name="BigBush9" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(511, 957)
-
-[node name="BigBush10" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(707, 961)
-
-[node name="BigBush11" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(848, 959)
-
-[node name="BigBush12" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(997, 962)
-
-[node name="BigBush13" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(1101, 921)
-
-[node name="BigBush14" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(1281, 927)
-
-[node name="BigBush15" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(1485, 915)
-
-[node name="BigBush16" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(1630, 928)
-
-[node name="BigBush17" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(1825, 915)
-
-[node name="BigBush18" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(1164, 937)
-
-[node name="BigBush19" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(1356, 946)
-
-[node name="BigBush20" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(2028, 919)
-
-[node name="BigBush21" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(1517, 959)
-
-[node name="BigBush22" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(1713, 963)
-
-[node name="BigBush23" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(1854, 961)
-
-[node name="BigBush24" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(2003, 964)
-
-[node name="BigBush25" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(2107, 910)
-
-[node name="BigBush26" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(2287, 916)
-
-[node name="BigBush27" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(2491, 904)
-
-[node name="BigBush28" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(2636, 917)
-
-[node name="BigBush29" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(2831, 904)
-
-[node name="BigBush30" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(2170, 926)
-
-[node name="BigBush31" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(2362, 935)
-
-[node name="BigBush32" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(3034, 908)
-
-[node name="BigBush33" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(2523, 948)
-
-[node name="BigBush34" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(2719, 952)
-
-[node name="BigBush35" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(2860, 950)
-
-[node name="BigBush36" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(3009, 953)
-
-[node name="BigBush37" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(3124, 911)
-
-[node name="BigBush38" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(3304, 917)
-
-[node name="BigBush39" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(3508, 905)
-
-[node name="BigBush40" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(3653, 918)
-
-[node name="BigBush41" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(3848, 905)
-
-[node name="BigBush42" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(3187, 927)
-
-[node name="BigBush43" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(3379, 936)
-
-[node name="BigBush44" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(4051, 909)
-
-[node name="BigBush45" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(3540, 949)
-
-[node name="BigBush46" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(3736, 953)
-
-[node name="BigBush47" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(3877, 951)
-
-[node name="BigBush48" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(4026, 954)
-
-[node name="BigBush49" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(4161, 912)
-
-[node name="BigBush50" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(4341, 918)
-
-[node name="BigBush51" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(4545, 906)
-
-[node name="BigBush52" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(4690, 919)
-
-[node name="BigBush53" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(4885, 906)
-
-[node name="BigBush54" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(4224, 928)
-
-[node name="BigBush55" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(4416, 937)
-
-[node name="BigBush56" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(5088, 910)
-
-[node name="BigBush57" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(4577, 950)
-
-[node name="BigBush58" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(4773, 954)
-
-[node name="BigBush59" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(4914, 952)
-
-[node name="BigBush60" parent="Parallax2D2" instance=ExtResource("10_wwo8s")]
-position = Vector2(5063, 955)
-
-[node name="Mushroom2" parent="Parallax2D2" instance=ExtResource("11_pwcr5")]
-
 [node name="Parallax2D" type="Parallax2D" parent="."]
 z_index = -20
 scroll_scale = Vector2(0.1, 0.1)
@@ -1302,6 +851,7 @@ position = Vector2(-6, 19)
 position = Vector2(39, 38)
 
 [node name="Parallax2D5" type="Parallax2D" parent="."]
+visible = false
 z_index = -43
 scroll_scale = Vector2(0.02, 0.02)
 
@@ -1796,3 +1346,725 @@ position = Vector2(900, 156)
 [node name="root8" parent="Parallax2D5" instance=ExtResource("11_wpp3k")]
 z_index = -8
 position = Vector2(1981, 205)
+
+[node name="Parallax2D2" type="Parallax2D" parent="."]
+
+[node name="NewBush" parent="Parallax2D2" instance=ExtResource("21_p3uye")]
+position = Vector2(47, 902)
+
+[node name="NewBush2" parent="Parallax2D2" instance=ExtResource("21_p3uye")]
+position = Vector2(108, 901)
+
+[node name="NewBush3" parent="Parallax2D2" instance=ExtResource("21_p3uye")]
+position = Vector2(189, 903)
+
+[node name="NewBush4" parent="Parallax2D2" instance=ExtResource("21_p3uye")]
+position = Vector2(262, 904)
+
+[node name="NewBush" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(352, 904)
+
+[node name="NewBush2" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(433, 906)
+
+[node name="NewBush3" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(530, 908)
+
+[node name="NewBush4" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(622, 908)
+
+[node name="NewBush5" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(702, 910)
+
+[node name="NewBush6" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(428, 615)
+
+[node name="NewBush7" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(526, 617)
+
+[node name="NewBush8" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(614, 618)
+
+[node name="NewBush9" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(718, 613)
+
+[node name="NewBush10" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(418, 547)
+
+[node name="NewBush" parent="NewBush10" instance=ExtResource("21_p3uye")]
+position = Vector2(40, 21)
+
+[node name="NewBush2" parent="NewBush10" instance=ExtResource("21_p3uye")]
+position = Vector2(15, -22)
+
+[node name="NewBush3" parent="NewBush10" instance=ExtResource("21_p3uye")]
+position = Vector2(124, 14)
+
+[node name="NewBush4" parent="NewBush10" instance=ExtResource("21_p3uye")]
+position = Vector2(217, 16)
+
+[node name="NewBush5" parent="NewBush10" instance=ExtResource("21_p3uye")]
+position = Vector2(120, -23)
+
+[node name="NewBush6" parent="NewBush10" instance=ExtResource("21_p3uye")]
+position = Vector2(303, 26)
+
+[node name="NewBush7" parent="NewBush10" instance=ExtResource("21_p3uye")]
+position = Vector2(315, -29)
+
+[node name="NewBush8" parent="NewBush10" instance=ExtResource("21_p3uye")]
+position = Vector2(203, -26)
+
+[node name="NewBush" parent="NewBush10/NewBush8" instance=ExtResource("21_p3uye")]
+position = Vector2(-119, 61)
+
+[node name="NewBush" parent="NewBush10/NewBush8/NewBush" instance=ExtResource("21_p3uye")]
+position = Vector2(286, 322)
+
+[node name="NewBush9" parent="NewBush10" instance=ExtResource("21_p3uye")]
+position = Vector2(314, 11)
+
+[node name="NewBush11" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(882, 906)
+
+[node name="NewBush12" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(977, 899)
+
+[node name="NewBush13" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1066, 906)
+
+[node name="NewBush14" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1155, 906)
+
+[node name="NewBush15" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1197, 852)
+
+[node name="NewBush16" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1201, 798)
+
+[node name="NewBush17" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1281, 792)
+
+[node name="NewBush18" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1326, 731)
+
+[node name="NewBush19" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1321, 665)
+
+[node name="NewBush20" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1368, 669)
+
+[node name="NewBush21" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1364, 727)
+
+[node name="NewBush22" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1502, 787)
+
+[node name="NewBush23" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1400, 786)
+
+[node name="NewBush24" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1341, 790)
+
+[node name="NewBush25" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1495, 849)
+
+[node name="NewBush26" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1477, 830)
+
+[node name="NewBush27" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1394, 839)
+
+[node name="NewBush28" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1291, 848)
+
+[node name="NewBush29" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1230, 901)
+
+[node name="NewBush30" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1338, 902)
+
+[node name="NewBush31" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1435, 898)
+
+[node name="NewBush32" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1535, 917)
+
+[node name="NewBush33" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1505, 879)
+
+[node name="NewBush34" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1625, 912)
+
+[node name="NewBush35" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1710, 915)
+
+[node name="NewBush36" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1799, 908)
+
+[node name="NewBush37" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1889, 907)
+
+[node name="NewBush38" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1971, 904)
+
+[node name="NewBush39" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2075, 908)
+
+[node name="NewBush40" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2179, 913)
+
+[node name="NewBush41" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2269, 912)
+
+[node name="NewBush42" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2360, 911)
+
+[node name="NewBush43" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2449, 911)
+
+[node name="NewBush44" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1710, 609)
+
+[node name="NewBush45" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1804, 611)
+
+[node name="NewBush46" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1708, 542)
+
+[node name="NewBush47" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1747, 579)
+
+[node name="NewBush48" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1895, 615)
+
+[node name="NewBush49" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1812, 534)
+
+[node name="NewBush50" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2011, 538)
+
+[node name="NewBush51" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1912, 534)
+
+[node name="NewBush52" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2001, 616)
+
+[node name="NewBush53" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2008, 584)
+
+[node name="NewBush54" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1919, 578)
+
+[node name="NewBush55" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(1825, 582)
+
+[node name="NewBush56" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2210, 613)
+
+[node name="NewBush57" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2308, 613)
+
+[node name="NewBush58" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2536, 524)
+
+[node name="NewBush59" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2441, 525)
+
+[node name="NewBush60" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2361, 522)
+
+[node name="NewBush61" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2274, 529)
+
+[node name="NewBush62" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2219, 541)
+
+[node name="NewBush63" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2251, 581)
+
+[node name="NewBush64" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2374, 612)
+
+[node name="NewBush65" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2459, 610)
+
+[node name="NewBush66" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2532, 613)
+
+[node name="NewBush67" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2513, 560)
+
+[node name="NewBush68" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2418, 565)
+
+[node name="NewBush69" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2327, 569)
+
+[node name="NewBush70" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2750, 609)
+
+[node name="NewBush71" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2727, 602)
+
+[node name="NewBush72" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2719, 534)
+
+[node name="NewBush73" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2803, 616)
+
+[node name="NewBush74" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2810, 536)
+
+[node name="NewBush75" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2838, 569)
+
+[node name="NewBush76" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2915, 531)
+
+[node name="NewBush77" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3014, 530)
+
+[node name="NewBush78" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2892, 610)
+
+[node name="NewBush79" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2945, 572)
+
+[node name="NewBush80" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2974, 612)
+
+[node name="NewBush81" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3046, 615)
+
+[node name="NewBush82" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3057, 550)
+
+[node name="NewBush83" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2548, 910)
+
+[node name="NewBush84" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2633, 913)
+
+[node name="NewBush85" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2730, 910)
+
+[node name="NewBush86" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2828, 916)
+
+[node name="NewBush87" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(2920, 910)
+
+[node name="NewBush88" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3023, 921)
+
+[node name="NewBush89" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3125, 924)
+
+[node name="NewBush90" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3222, 918)
+
+[node name="NewBush91" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3317, 914)
+
+[node name="NewBush92" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3366, 666)
+
+[node name="NewBush93" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3410, 675)
+
+[node name="NewBush94" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3422, 733)
+
+[node name="NewBush95" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3379, 732)
+
+[node name="NewBush96" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3245, 790)
+
+[node name="NewBush97" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3250, 852)
+
+[node name="NewBush98" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3347, 792)
+
+[node name="NewBush99" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3352, 850)
+
+[node name="NewBush100" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3449, 790)
+
+[node name="NewBush101" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3537, 796)
+
+[node name="NewBush102" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3416, 905)
+
+[node name="NewBush103" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3443, 846)
+
+[node name="NewBush104" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3538, 850)
+
+[node name="NewBush105" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3513, 910)
+
+[node name="NewBush106" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3430, 666)
+
+[node name="NewBush107" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3597, 912)
+
+[node name="NewBush108" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3695, 912)
+
+[node name="NewBush109" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3778, 919)
+
+[node name="NewBush110" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3869, 911)
+
+[node name="NewBush111" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3972, 919)
+
+[node name="NewBush112" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4075, 916)
+
+[node name="NewBush113" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4119, 862)
+
+[node name="NewBush114" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4139, 798)
+
+[node name="NewBush115" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4239, 795)
+
+[node name="NewBush116" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4303, 798)
+
+[node name="NewBush117" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4303, 850)
+
+[node name="NewBush118" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4203, 859)
+
+[node name="NewBush119" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4183, 917)
+
+[node name="NewBush120" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4280, 917)
+
+[node name="NewBush121" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4323, 914)
+
+[node name="NewBush122" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4415, 912)
+
+[node name="NewBush123" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4506, 918)
+
+[node name="NewBush124" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4592, 926)
+
+[node name="NewBush125" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4689, 926)
+
+[node name="NewBush126" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4784, 923)
+
+[node name="NewBush127" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4884, 923)
+
+[node name="NewBush128" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4913, 862)
+
+[node name="NewBush129" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4904, 791)
+
+[node name="NewBush130" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4958, 821)
+
+[node name="NewBush131" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4960, 736)
+
+[node name="NewBush122" parent="NewBush131" instance=ExtResource("21_p3uye")]
+position = Vector2(4415, 912)
+
+[node name="NewBush132" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4902, 723)
+
+[node name="NewBush122" parent="NewBush132" instance=ExtResource("21_p3uye")]
+position = Vector2(4415, 912)
+
+[node name="NewBush133" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4898, 654)
+
+[node name="NewBush134" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4896, 590)
+
+[node name="NewBush135" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4896, 529)
+
+[node name="NewBush136" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4896, 472)
+
+[node name="NewBush137" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4903, 412)
+
+[node name="NewBush138" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4906, 352)
+
+[node name="NewBush139" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4906, 307)
+
+[node name="NewBush140" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4896, 247)
+
+[node name="NewBush141" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4896, 198)
+
+[node name="NewBush142" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4896, 128)
+
+[node name="NewBush143" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4948, 154)
+
+[node name="NewBush144" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4896, 70)
+
+[node name="NewBush145" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4884, 6)
+
+[node name="NewBush146" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4970, 673)
+
+[node name="NewBush147" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4962, 606)
+
+[node name="NewBush148" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4967, 548)
+
+[node name="NewBush149" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4966, 484)
+
+[node name="NewBush150" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4960, 406)
+
+[node name="NewBush138" parent="NewBush150" instance=ExtResource("21_p3uye")]
+position = Vector2(4906, 352)
+
+[node name="NewBush151" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4977, 352)
+
+[node name="NewBush152" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4966, 312)
+
+[node name="NewBush153" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4966, 252)
+
+[node name="NewBush154" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4966, 195)
+
+[node name="NewBush155" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4966, 110)
+
+[node name="NewBush156" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4966, 47)
+
+[node name="NewBush157" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4966, 766)
+
+[node name="NewBush158" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4966, 484)
+
+[node name="NewBush159" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4569, 620)
+
+[node name="NewBush160" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4479, 621)
+
+[node name="NewBush161" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4387, 622)
+
+[node name="NewBush162" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4570, 575)
+
+[node name="NewBush163" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4570, 532)
+
+[node name="NewBush164" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4479, 532)
+
+[node name="NewBush165" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4479, 585)
+
+[node name="NewBush166" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4387, 576)
+
+[node name="NewBush167" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4387, 523)
+
+[node name="NewBush168" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4060, 518)
+
+[node name="NewBush169" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3996, 522)
+
+[node name="NewBush170" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3908, 526)
+
+[node name="NewBush171" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3887, 521)
+
+[node name="NewBush172" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4075, 567)
+
+[node name="NewBush173" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3972, 569)
+
+[node name="NewBush174" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3870, 579)
+
+[node name="NewBush175" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(4075, 611)
+
+[node name="NewBush176" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3972, 609)
+
+[node name="NewBush177" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(3874, 611)
+
+[node name="NewBush178" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(-19, 886)
+
+[node name="NewBush179" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(-22, 827)
+
+[node name="NewBush180" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(-31, 766)
+
+[node name="NewBush181" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(-22, 707)
+
+[node name="NewBush182" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(-22, 644)
+
+[node name="NewBush183" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(-4, 582)
+
+[node name="NewBush184" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(-9, 520)
+
+[node name="NewBush185" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(-17, 447)
+
+[node name="NewBush186" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(-17, 383)
+
+[node name="NewBush187" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(-22, 497)
+
+[node name="NewBush188" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(-22, 332)
+
+[node name="NewBush189" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(-13, 268)
+
+[node name="NewBush190" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(-14, 216)
+
+[node name="NewBush191" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(-14, 174)
+
+[node name="NewBush192" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(-17, 113)
+
+[node name="NewBush193" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(-17, 68)
+
+[node name="NewBush193" parent="NewBush193" instance=ExtResource("21_p3uye")]
+position = Vector2(-49, -31)
+
+[node name="NewBush194" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(-14, 30)
+
+[node name="NewBush189" parent="NewBush194" instance=ExtResource("21_p3uye")]
+position = Vector2(-13, 268)
+
+[node name="NewBush195" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(-93, 99)
+
+[node name="NewBush189" parent="NewBush195" instance=ExtResource("21_p3uye")]
+position = Vector2(-13, 268)
+
+[node name="NewBush196" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(-113, 138)
+
+[node name="NewBush189" parent="NewBush196" instance=ExtResource("21_p3uye")]
+position = Vector2(-13, 268)
+
+[node name="NewBush197" parent="." instance=ExtResource("21_p3uye")]
+position = Vector2(-113, 182)
+
+[node name="NewBush189" parent="NewBush197" instance=ExtResource("21_p3uye")]
+position = Vector2(-13, 268)
+
+[node name="NewBush194" parent="NewBush197" instance=ExtResource("21_p3uye")]
+position = Vector2(0, 39)
+
+[node name="NewBush189" parent="NewBush197/NewBush194" instance=ExtResource("21_p3uye")]
+position = Vector2(-13, 268)
+
+[node name="NewBush195" parent="NewBush197" instance=ExtResource("21_p3uye")]
+position = Vector2(0, 81)
+
+[node name="NewBush189" parent="NewBush197/NewBush195" instance=ExtResource("21_p3uye")]
+position = Vector2(-13, 268)
+
+[node name="NewBush196" parent="NewBush197" instance=ExtResource("21_p3uye")]
+position = Vector2(0, 124)
+
+[node name="NewBush189" parent="NewBush197/NewBush196" instance=ExtResource("21_p3uye")]
+position = Vector2(-13, 268)
+
+[node name="NewBush197" parent="NewBush197" instance=ExtResource("21_p3uye")]
+position = Vector2(0, 206)
+
+[node name="NewBush189" parent="NewBush197/NewBush197" instance=ExtResource("21_p3uye")]
+position = Vector2(-13, 268)
+
+[node name="NewBush198" parent="NewBush197" instance=ExtResource("21_p3uye")]
+position = Vector2(37, 364)
+
+[node name="NewBush189" parent="NewBush197/NewBush198" instance=ExtResource("21_p3uye")]
+position = Vector2(-13, 268)
+
+[node name="NewBush199" parent="NewBush197" instance=ExtResource("21_p3uye")]
+position = Vector2(30, 266)
+
+[node name="NewBush189" parent="NewBush197/NewBush199" instance=ExtResource("21_p3uye")]
+position = Vector2(-13, 268)
+
+[node name="NewBush200" parent="NewBush197" instance=ExtResource("21_p3uye")]
+position = Vector2(32, 416)
+
+[node name="NewBush189" parent="NewBush197/NewBush200" instance=ExtResource("21_p3uye")]
+position = Vector2(-13, 268)
+
+[node name="NewBush201" parent="NewBush197" instance=ExtResource("21_p3uye")]
+position = Vector2(0, -159)
+
+[node name="NewBush189" parent="NewBush197/NewBush201" instance=ExtResource("21_p3uye")]
+position = Vector2(-13, 268)
+
+[node name="NewBush202" parent="NewBush197" instance=ExtResource("21_p3uye")]
+position = Vector2(16, 574)
+
+[node name="NewBush189" parent="NewBush197/NewBush202" instance=ExtResource("21_p3uye")]
+position = Vector2(-13, 268)
+
+[node name="NewBush203" parent="NewBush197" instance=ExtResource("21_p3uye")]
+position = Vector2(-25, 435)
+
+[node name="NewBush189" parent="NewBush197/NewBush203" instance=ExtResource("21_p3uye")]
+position = Vector2(-13, 268)

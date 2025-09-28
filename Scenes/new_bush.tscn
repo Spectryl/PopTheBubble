@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://g6gufa7le5t1"]
+
+[ext_resource type="Texture2D" uid="uid://bmp6vehlrxol8" path="res://Art/Misc/ForegroundBush.png" id="1_gk3bw"]
+
+[node name="NewBush" type="Sprite2D"]
+position = Vector2(1, -46)
+texture = ExtResource("1_gk3bw")
