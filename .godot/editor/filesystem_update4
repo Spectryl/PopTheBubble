@@ -9,3 +9,4 @@ res://addons/TileMapDual/TerrainPreset.gd
 res://Scripts/Main/main_master.gd
 res://Scenes/player.tscn
 res://Scenes/bubble.tscn
+res://Resources/PopTextureAtlus.tres

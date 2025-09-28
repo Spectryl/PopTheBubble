@@ -3361,7 +3361,7 @@ scale = Vector2(0.25, 0.25)
 [node name="Torso" type="Sprite2D" parent="Rig"]
 texture = ExtResource("2_cvnsp")
 region_enabled = true
-region_rect = Rect2(450.9272, 412.61353, 96.197205, 182.38647)
+region_rect = Rect2(551, 78, 96, 240)
 
 [node name="LCloak" type="Sprite2D" parent="Rig/Torso"]
 position = Vector2(-110.49078, -20.952698)
@@ -3369,7 +3369,7 @@ rotation = 0.20576318
 scale = Vector2(0.77, 0.77)
 texture = ExtResource("2_cvnsp")
 region_enabled = true
-region_rect = Rect2(9, 6, 314, 303)
+region_rect = Rect2(1, 6, 313, 310)
 
 [node name="RCloak" type="Sprite2D" parent="Rig/Torso"]
 position = Vector2(108, -12)
@@ -3378,32 +3378,32 @@ scale = Vector2(0.7699999, 0.7699999)
 texture = ExtResource("2_cvnsp")
 flip_h = true
 region_enabled = true
-region_rect = Rect2(9, 6, 314, 303)
+region_rect = Rect2(0, 6, 311, 309)
 
 [node name="Head" type="Sprite2D" parent="Rig/Torso"]
 position = Vector2(-4, -158)
 texture = ExtResource("2_cvnsp")
 region_enabled = true
-region_rect = Rect2(382, 241, 229, 135)
+region_rect = Rect2(312, 182, 230, 134)
 
 [node name="Mask" type="Sprite2D" parent="Rig/Torso/Head"]
 position = Vector2(0.5, 0)
 scale = Vector2(1.0046729, 1)
 texture = ExtResource("2_cvnsp")
 region_enabled = true
-region_rect = Rect2(392, 182, 214, 40)
+region_rect = Rect2(322, 122, 214, 39)
 
 [node name="LEye" type="Sprite2D" parent="Rig/Torso/Head"]
 position = Vector2(-68, -2)
 texture = ExtResource("2_cvnsp")
 region_enabled = true
-region_rect = Rect2(212, 352, 17, 18)
+region_rect = Rect2(489, 43, 17, 18)
 
 [node name="REye" type="Sprite2D" parent="Rig/Torso/Head"]
 position = Vector2(20, -2)
 texture = ExtResource("2_cvnsp")
 region_enabled = true
-region_rect = Rect2(212, 352, 17, 18)
+region_rect = Rect2(489, 43, 17, 18)
 
 [node name="LLeg" type="Sprite2D" parent="Rig/Torso"]
 show_behind_parent = true
@@ -3411,14 +3411,14 @@ position = Vector2(-56.000004, 112)
 rotation = 0.2500016
 texture = ExtResource("2_cvnsp")
 region_enabled = true
-region_rect = Rect2(453, 654, 8, 80)
+region_rect = Rect2(516, 35, 8, 80)
 
 [node name="LShoe" type="Sprite2D" parent="Rig/Torso/LLeg"]
 position = Vector2(-20.18837, 60.81472)
 rotation = -0.5736747
 texture = ExtResource("2_cvnsp")
 region_enabled = true
-region_rect = Rect2(352, 750, 110, 46)
+region_rect = Rect2(397, 64, 110, 45)
 
 [node name="RLeg" type="Sprite2D" parent="Rig/Torso"]
 show_behind_parent = true
@@ -3426,14 +3426,14 @@ position = Vector2(41, 121)
 rotation = -0.23240754
 texture = ExtResource("2_cvnsp")
 region_enabled = true
-region_rect = Rect2(453, 654, 8, 80)
+region_rect = Rect2(516, 35, 8, 80)
 
 [node name="Rshoe" type="Sprite2D" parent="Rig/Torso/RLeg"]
 position = Vector2(-20.18837, 60.81472)
 rotation = 0.4866521
 texture = ExtResource("2_cvnsp")
 region_enabled = true
-region_rect = Rect2(352, 750, 110, 46)
+region_rect = Rect2(397, 64, 110, 46)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
