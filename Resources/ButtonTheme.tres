@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=7 format=3 uid="uid://1kr4fl0cxyvy"]
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://1kr4fl0cxyvy"]
 
 [ext_resource type="FontFile" uid="uid://c8rxkmcj87xvm" path="res://Font/RoadRage-Regular.ttf" id="1_mt4at"]
 
@@ -22,6 +22,13 @@ bg_color = Color(0.6, 0.6, 0.6, 0)
 draw_center = false
 border_color = Color(3.657937e-06, 0.92649037, 0.81018955, 0)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rekv5"]
+bg_color = Color(0.80116725, 0.5662217, 0.8821604, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
 [resource]
 default_font = ExtResource("1_mt4at")
 Button/colors/font_color = Color(0.47058824, 0.21176471, 0.5529412, 1)
@@ -40,3 +47,4 @@ Button/styles/focus = SubResource("StyleBoxFlat_c1qgm")
 Button/styles/hover = SubResource("StyleBoxFlat_mt4at")
 Button/styles/normal = SubResource("StyleBoxFlat_alore")
 Button/styles/pressed = SubResource("StyleBoxFlat_k2kie")
+Panel/styles/panel = SubResource("StyleBoxFlat_rekv5")

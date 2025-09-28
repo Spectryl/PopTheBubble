@@ -1,0 +1,60 @@
+[gd_scene load_steps=11 format=3 uid="uid://627idr7pj0fb"]
+
+[ext_resource type="Script" uid="uid://c4roympdao1og" path="res://Scripts/Main/sound_master.gd" id="1_xtr6n"]
+[ext_resource type="AudioStream" uid="uid://b7omq1xd4oagf" path="res://Audio/Sound/pop1.ogg" id="2_ojc05"]
+[ext_resource type="AudioStream" uid="uid://dt51d4aldir00" path="res://Audio/Sound/pop2.ogg" id="3_cn5vi"]
+[ext_resource type="AudioStream" uid="uid://mx8l0iv78rck" path="res://Audio/Sound/pop3.ogg" id="4_s1x4u"]
+[ext_resource type="AudioStream" uid="uid://ct2y88kj3hxpr" path="res://Audio/Sound/45_Landing_01.wav" id="5_ojc05"]
+[ext_resource type="AudioStream" uid="uid://7r6kbcpxnm03" path="res://Audio/Sound/03_Step_grass_03.wav" id="6_cn5vi"]
+[ext_resource type="AudioStream" uid="uid://cnefulmvoxm3e" path="res://Audio/Sound/30_Jump_03.wav" id="7_s1x4u"]
+[ext_resource type="AudioStream" uid="uid://cy6echg7onsn" path="res://Audio/Sound/56_Attack_03.ogg" id="8_gwaeg"]
+[ext_resource type="AudioStream" uid="uid://d2vn6f68h33q5" path="res://Audio/Sound/88_Teleport_02.wav" id="9_ybfd0"]
+[ext_resource type="AudioStream" uid="uid://bvo8qiifi08ci" path="res://Audio/Sound/61_Hit_03.wav" id="10_bhvvo"]
+
+[node name="SoundMaster" type="Node"]
+script = ExtResource("1_xtr6n")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_ojc05")
+max_distance = 80000.0
+max_polyphony = 30
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_cn5vi")
+max_distance = 80000.0
+max_polyphony = 30
+
+[node name="AudioStreamPlayer2D3" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_s1x4u")
+max_distance = 80000.0
+max_polyphony = 30
+
+[node name="AudioStreamPlayer2D4" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_ojc05")
+max_distance = 80000.0
+max_polyphony = 30
+
+[node name="AudioStreamPlayer2D5" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_cn5vi")
+max_distance = 80000.0
+max_polyphony = 30
+
+[node name="AudioStreamPlayer2D6" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_s1x4u")
+max_distance = 80000.0
+max_polyphony = 30
+
+[node name="AudioStreamPlayer2D7" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_gwaeg")
+max_distance = 80000.0
+max_polyphony = 30
+
+[node name="AudioStreamPlayer2D8" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_ybfd0")
+max_distance = 80000.0
+max_polyphony = 30
+
+[node name="AudioStreamPlayer2D9" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_bhvvo")
+max_distance = 80000.0
+max_polyphony = 30

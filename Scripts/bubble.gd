@@ -50,6 +50,7 @@ func _on_active_timer_timeout() -> void:
 	$CPUParticles2D.emitting = true
 	$Sprite2D.visible = false
 	freeze = true
+	SoundMaster.call_deferred("play",SoundMaster.SFX.BUBBLES)
 	delete_timer.start()
 func _on_delete_timer_timeout() -> void:
 	call_deferred("queue_free")

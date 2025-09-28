@@ -20,3 +20,7 @@ res://Scenes/Main Menu/MainMenuMaster.tscn
 res://Scripts/Main Menu/main_menu_master.gd
 res://Scripts/Main Menu/title_screen.gd
 res://Scenes/Main Menu/title_screen.tscn
+res://Scenes/Main Menu/credits.tscn
+res://Scenes/Main/sound_master.tscn
+res://Scripts/Main/sound_master.gd
+res://Resources/CreditsLabelSettings.tres

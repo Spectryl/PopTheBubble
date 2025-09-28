@@ -55,7 +55,9 @@ func handle_player_jump() -> void:
 	if Input.is_action_just_pressed("Jump") and is_on_floor():
 		velocity.y = JUMP_POWER * -1
 		is_jumping = true
-		if not (ANIMATION_PLAYER.current_animation == "attacking" or ANIMATION_PLAYER.current_animation == "attacking_needle"): ANIMATION_PLAYER.play("jump_squat")
+		if not (ANIMATION_PLAYER.current_animation == "attacking" or ANIMATION_PLAYER.current_animation == "attacking_needle"): 
+			ANIMATION_PLAYER.play("jump_squat")
+			SoundMaster.play(SoundMaster.SFX.JUMPING)
 	# Short Hop/Cancel Jump
 	if Input.is_action_just_released("Jump") and velocity.y < 0:
 		velocity.y = 0
@@ -71,17 +73,21 @@ func handle_landing() -> void:
 	if is_on_floor() and is_falling:
 		is_jumping = false
 		is_falling = false
-		if not (ANIMATION_PLAYER.current_animation == "attacking" or ANIMATION_PLAYER.current_animation == "attacking_needle"): ANIMATION_PLAYER.play("landing")
+		if not (ANIMATION_PLAYER.current_animation == "attacking" or ANIMATION_PLAYER.current_animation == "attacking_needle"): 
+			ANIMATION_PLAYER.play("landing")
+			SoundMaster.play(SoundMaster.SFX.LANDING)
 	
 func handle_player_attacks() -> void:
 	if Input.is_action_pressed("Attack") and on_poke_cooldown == false:
 		ANIMATION_PLAYER.play("attacking_needle")
 		on_poke_cooldown = true
 		NEEDLECDTIMER.start()
+		SoundMaster.play(SoundMaster.SFX.ATTACKING)
 	if Input.is_action_just_pressed("Bubbles") and on_attack_cooldown == false:
 		ANIMATION_PLAYER.play("attacking")
 		on_attack_cooldown = true
 		ATTACKCDTIMER.start()
+		SoundMaster.play(SoundMaster.SFX.ATTACKING)
 func create_bubble() -> void:
 	var new_bubble = BUBBLES_SCENE.instantiate()
 	new_bubble.global_position = global_position
@@ -122,5 +128,6 @@ func _on_needle_cool_down_t_imer_timeout() -> void:
 
 func take_poison_damage(damage_taken : int) -> void:
 	health -= damage_taken
+	SoundMaster.play(SoundMaster.SFX.HURT)
 	if health <= 0:
 		queue_free()

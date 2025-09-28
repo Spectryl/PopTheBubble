@@ -15,6 +15,10 @@ run/main_scene="uid://ovfbcxo2k1fx"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SoundMaster="*res://Scenes/Main/sound_master.tscn"
+
 [display]
 
 window/size/viewport_width=1280

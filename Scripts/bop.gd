@@ -134,6 +134,7 @@ func handle_enemy_attacks() -> void:
 			ANIMATION_PLAYER.play("attacking")
 			on_attack_cooldown = true
 			ATTACKCDTIMER.start()
+			SoundMaster.play(SoundMaster.SFX.ATTACKING)
 
 func create_bubble() -> void:
 	var new_bubble = BUBBLES_SCENE.instantiate()
@@ -168,7 +169,9 @@ func handle_landing() -> void:
 		if is_falling:
 			is_jumping = false
 			is_falling = false
-			if not ANIMATION_PLAYER.current_animation == "attacking": ANIMATION_PLAYER.play("landing")
+			if not ANIMATION_PLAYER.current_animation == "attacking": 
+				ANIMATION_PLAYER.play("landing")
+				SoundMaster.play(SoundMaster.SFX.LANDING)
 	else:
 		if velocity.y > 0 and not is_jumping:
 			is_falling = true
