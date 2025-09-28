@@ -1,10 +1,10 @@
+AudioStreamPlayer2D
 Button
 Label
 HSlider
 VBoxContainer
 HBoxContainer
 ScrollContainer
-AudioStreamPlayer2D
 Node
 LinkButton
 Panel

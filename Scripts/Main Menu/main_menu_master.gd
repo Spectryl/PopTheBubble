@@ -26,9 +26,9 @@ func switch_menu(NewMenuID: MenuID) -> void:
 		MenuID.CONTROLS:
 			pass
 		MenuID.OPTIONS:
-			current_menu = CREDITS.instantiate()
+			current_menu = load("res://Scenes/Main Menu/options.tscn").instantiate()
 		MenuID.CREDITS:
-			current_menu = load("res://Scenes/Main Menu/credits.tscn").instantiate()
+			current_menu = CREDITS.instantiate()
 		MenuID.EXTRAS:
 			pass
 	call_deferred("add_child", current_menu)

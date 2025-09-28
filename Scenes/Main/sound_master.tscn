@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://627idr7pj0fb"]
+[gd_scene load_steps=12 format=3 uid="uid://627idr7pj0fb"]
 
 [ext_resource type="Script" uid="uid://c4roympdao1og" path="res://Scripts/Main/sound_master.gd" id="1_xtr6n"]
 [ext_resource type="AudioStream" uid="uid://b7omq1xd4oagf" path="res://Audio/Sound/pop1.ogg" id="2_ojc05"]
@@ -10,6 +10,7 @@
 [ext_resource type="AudioStream" uid="uid://cy6echg7onsn" path="res://Audio/Sound/56_Attack_03.ogg" id="8_gwaeg"]
 [ext_resource type="AudioStream" uid="uid://d2vn6f68h33q5" path="res://Audio/Sound/88_Teleport_02.wav" id="9_ybfd0"]
 [ext_resource type="AudioStream" uid="uid://bvo8qiifi08ci" path="res://Audio/Sound/61_Hit_03.wav" id="10_bhvvo"]
+[ext_resource type="AudioStream" uid="uid://c3qlxqopj1bes" path="res://Audio/Music/Kim Lightyear - Legends.mp3" id="11_lwjvl"]
 
 [node name="SoundMaster" type="Node"]
 script = ExtResource("1_xtr6n")
@@ -58,3 +59,8 @@ max_polyphony = 30
 stream = ExtResource("10_bhvvo")
 max_distance = 80000.0
 max_polyphony = 30
+
+[node name="AudioStreamPlayer2D10" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_lwjvl")
+volume_db = -32.075
+max_distance = 8000.0

@@ -12,6 +12,9 @@ enum SFX {
 @export var pitch_scale_min : float = 0.95
 @export var pitch_scale_max : float = 1.05
 
+func _ready() -> void:
+	$AudioStreamPlayer2D10.play()
+
 # this should all be cached nodes but game jam time crunch momento
 func play(sound_to_play: SFX) -> void:
 	match sound_to_play:
