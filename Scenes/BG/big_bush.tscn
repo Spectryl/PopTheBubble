@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://6fjvxl3qslgs"]
+
+[ext_resource type="Texture2D" uid="uid://dxey75y8u1a4m" path="res://Resources/Background.tres" id="1_yjr64"]
+
+[node name="BigBush" type="Sprite2D"]
+position = Vector2(3, -57)
+texture = ExtResource("1_yjr64")
+region_enabled = true
+region_rect = Rect2(857, 462, 256, 114)

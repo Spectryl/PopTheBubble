@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdeetcx3nuga0"]
+
+[ext_resource type="Texture2D" uid="uid://dxey75y8u1a4m" path="res://Resources/Background.tres" id="1_1rme2"]
+
+[node name="Mushroom3" type="Sprite2D"]
+position = Vector2(3, -64)
+texture = ExtResource("1_1rme2")
+region_enabled = true
+region_rect = Rect2(1125, 584, 135, 134)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-32, -26)
+texture = ExtResource("1_1rme2")
+region_enabled = true
+region_rect = Rect2(1072, 402, 29, 26)
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(60, 13)
+texture = ExtResource("1_1rme2")
+region_enabled = true
+region_rect = Rect2(1072, 402, 29, 26)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(19, -43)
+texture = ExtResource("1_1rme2")
+region_enabled = true
+region_rect = Rect2(1072, 402, 29, 26)

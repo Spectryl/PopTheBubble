@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bfas6uo2whewk"]
+
+[ext_resource type="Texture2D" uid="uid://dxey75y8u1a4m" path="res://Resources/Background.tres" id="1_pubdv"]
+
+[node name="Rock4" type="Sprite2D"]
+position = Vector2(4, -28)
+texture = ExtResource("1_pubdv")
+region_enabled = true
+region_rect = Rect2(766, 514, 60, 64)

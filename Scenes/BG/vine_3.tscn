@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cm5wqqm8w3t3i"]
+
+[ext_resource type="Texture2D" uid="uid://dxey75y8u1a4m" path="res://Resources/Background.tres" id="1_ue0dt"]
+
+[node name="Vine3" type="Sprite2D"]
+position = Vector2(2, -22)
+texture = ExtResource("1_ue0dt")
+region_enabled = true
+region_rect = Rect2(171, 621, 185, 33)

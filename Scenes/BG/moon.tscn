@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0fgsr7irpop2"]
+
+[ext_resource type="Texture2D" uid="uid://dxey75y8u1a4m" path="res://Resources/Background.tres" id="1_f52py"]
+
+[node name="moon" type="Sprite2D"]
+position = Vector2(7, -142)
+texture = ExtResource("1_f52py")
+region_enabled = true
+region_rect = Rect2(785, 178, 277, 286)

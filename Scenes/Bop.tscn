@@ -1,7 +1,8 @@
-[gd_scene load_steps=26 format=3 uid="uid://2xr5r7dti6l1"]
+[gd_scene load_steps=28 format=3 uid="uid://6enwohhbp3rq"]
 
-[ext_resource type="Script" uid="uid://bq1g3vqh3w0o5" path="res://Scripts/player.gd" id="1_v0iea"]
-[ext_resource type="Texture2D" uid="uid://c3bwy4j5tbnk7" path="res://Resources/PopTextureAtlus.tres" id="2_cvnsp"]
+[ext_resource type="Texture2D" uid="uid://df4vnbibkxolu" path="res://Resources/BopTextureAtlus.tres" id="1_1dxdi"]
+[ext_resource type="Script" uid="uid://rumq16tppnbp" path="res://Scripts/bop.gd" id="1_ivweg"]
+[ext_resource type="Texture2D" uid="uid://crk58qobvqe5h" path="res://Art/Characters/Bop.png" id="2_ivweg"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_f60y1"]
 radius = 27.0
@@ -3342,13 +3343,11 @@ states/landing/node = SubResource("AnimationNodeAnimation_x3wgy")
 states/landing/position = Vector2(303, 225)
 transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_3smsa"), "jump_squat", "jumping", SubResource("AnimationNodeStateMachineTransition_8erm5"), "idle", "jump_squat", SubResource("AnimationNodeStateMachineTransition_f1ek2"), "falling", "landing", SubResource("AnimationNodeStateMachineTransition_tx1dd"), "landing", "idle", SubResource("AnimationNodeStateMachineTransition_gymyn"), "jumping", "falling", SubResource("AnimationNodeStateMachineTransition_pu2lt")]
 
-[node name="Player" type="CharacterBody2D" groups=["Player"]]
-script = ExtResource("1_v0iea")
-SPEED = 350
-ACCELERATION = 16
-FRICTION = 21
-JUMP_POWER = 650
-FAST_FALL_SPEED = 50
+[sub_resource type="CircleShape2D" id="CircleShape2D_ivweg"]
+radius = 600.0
+
+[node name="Bop" type="CharacterBody2D"]
+script = ExtResource("1_ivweg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -60)
@@ -3359,7 +3358,7 @@ position = Vector2(0, -51)
 scale = Vector2(0.25, 0.25)
 
 [node name="Torso" type="Sprite2D" parent="Rig"]
-texture = ExtResource("2_cvnsp")
+texture = ExtResource("1_1dxdi")
 region_enabled = true
 region_rect = Rect2(551, 78, 96, 240)
 
@@ -3367,7 +3366,7 @@ region_rect = Rect2(551, 78, 96, 240)
 position = Vector2(-110.49078, -20.952698)
 rotation = 0.20576318
 scale = Vector2(0.77, 0.77)
-texture = ExtResource("2_cvnsp")
+texture = ExtResource("1_1dxdi")
 region_enabled = true
 region_rect = Rect2(1, 6, 313, 310)
 
@@ -3375,33 +3374,33 @@ region_rect = Rect2(1, 6, 313, 310)
 position = Vector2(108, -12)
 rotation = 0.34906584
 scale = Vector2(0.7699999, 0.7699999)
-texture = ExtResource("2_cvnsp")
+texture = ExtResource("1_1dxdi")
 flip_h = true
 region_enabled = true
 region_rect = Rect2(0, 6, 311, 309)
 
 [node name="Head" type="Sprite2D" parent="Rig/Torso"]
 position = Vector2(-4, -158)
-texture = ExtResource("2_cvnsp")
+texture = ExtResource("2_ivweg")
 region_enabled = true
 region_rect = Rect2(312, 182, 230, 134)
 
 [node name="Mask" type="Sprite2D" parent="Rig/Torso/Head"]
 position = Vector2(0.5, 0)
 scale = Vector2(1.0046729, 1)
-texture = ExtResource("2_cvnsp")
+texture = ExtResource("1_1dxdi")
 region_enabled = true
 region_rect = Rect2(322, 122, 214, 39)
 
 [node name="LEye" type="Sprite2D" parent="Rig/Torso/Head"]
 position = Vector2(-68, -2)
-texture = ExtResource("2_cvnsp")
+texture = ExtResource("1_1dxdi")
 region_enabled = true
 region_rect = Rect2(489, 43, 17, 18)
 
 [node name="REye" type="Sprite2D" parent="Rig/Torso/Head"]
 position = Vector2(20, -2)
-texture = ExtResource("2_cvnsp")
+texture = ExtResource("1_1dxdi")
 region_enabled = true
 region_rect = Rect2(489, 43, 17, 18)
 
@@ -3409,14 +3408,14 @@ region_rect = Rect2(489, 43, 17, 18)
 show_behind_parent = true
 position = Vector2(-56.000004, 112)
 rotation = 0.2500016
-texture = ExtResource("2_cvnsp")
+texture = ExtResource("2_ivweg")
 region_enabled = true
 region_rect = Rect2(516, 35, 8, 80)
 
 [node name="LShoe" type="Sprite2D" parent="Rig/Torso/LLeg"]
 position = Vector2(-20.18837, 60.81472)
 rotation = -0.5736747
-texture = ExtResource("2_cvnsp")
+texture = ExtResource("2_ivweg")
 region_enabled = true
 region_rect = Rect2(397, 64, 110, 45)
 
@@ -3424,14 +3423,14 @@ region_rect = Rect2(397, 64, 110, 45)
 show_behind_parent = true
 position = Vector2(41, 121)
 rotation = -0.23240754
-texture = ExtResource("2_cvnsp")
+texture = ExtResource("1_1dxdi")
 region_enabled = true
 region_rect = Rect2(516, 35, 8, 80)
 
 [node name="Rshoe" type="Sprite2D" parent="Rig/Torso/RLeg"]
 position = Vector2(-20.18837, 60.81472)
 rotation = 0.4866521
-texture = ExtResource("2_cvnsp")
+texture = ExtResource("2_ivweg")
 region_enabled = true
 region_rect = Rect2(397, 64, 110, 46)
 
@@ -3455,4 +3454,18 @@ parameters/conditions/!is_jumping = false
 wait_time = 0.7
 one_shot = true
 
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -138)
+shape = SubResource("CircleShape2D_ivweg")
+debug_color = Color(0, 0.636471, 0.4084144, 0.41960785)
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(2, -35)
+target_position = Vector2(-64, 0)
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
 [connection signal="timeout" from="AttackCooldownTimer" to="." method="_on_attack_cooldown_timer_timeout"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bm6cum7gdgmjq"]
+
+[ext_resource type="Texture2D" uid="uid://dxey75y8u1a4m" path="res://Resources/Background.tres" id="1_0k51p"]
+
+[node name="smallbush" type="Sprite2D"]
+position = Vector2(0, -21)
+texture = ExtResource("1_0k51p")
+region_enabled = true
+region_rect = Rect2(526, 588, 75, 41)
