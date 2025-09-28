@@ -27,7 +27,7 @@ point_count = 3
 [sub_resource type="CircleShape2D" id="CircleShape2D_uq4rs"]
 radius = 65.12296
 
-[node name="OrangeBubble" type="RigidBody2D"]
+[node name="OrangeBubble" type="RigidBody2D" groups=["OrangeBubble"]]
 collision_layer = 4
 physics_material_override = SubResource("PhysicsMaterial_amq2t")
 gravity_scale = 0.0
@@ -69,7 +69,7 @@ angular_velocity_curve = SubResource("Curve_0iu24")
 linear_accel_curve = SubResource("Curve_7vocm")
 scale_amount_curve = SubResource("Curve_35n32")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." groups=["OrangeBubble"]]
 collision_layer = 8
 collision_mask = 2
 
@@ -78,5 +78,6 @@ position = Vector2(2, -65)
 shape = SubResource("CircleShape2D_uq4rs")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_body_exited"]

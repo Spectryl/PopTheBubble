@@ -53,3 +53,9 @@ func _on_active_timer_timeout() -> void:
 	delete_timer.start()
 func _on_delete_timer_timeout() -> void:
 	call_deferred("queue_free")
+
+
+func _on_area_2d_area_entered(area: Area2D) -> void:
+	print(area)
+	if area.is_in_group("needle") or area.get_parent().is_in_group("needle"):
+		_on_active_timer_timeout()

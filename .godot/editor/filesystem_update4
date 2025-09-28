@@ -10,3 +10,6 @@ res://Scripts/orange_bubble.gd
 res://Scripts/player.gd
 res://Scenes/orange_bubble.tscn
 res://Scenes/player.tscn
+res://Resources/PopTextureAtlus.tres
+res://Scenes/needle.tscn
+res://Scripts/needle.gd

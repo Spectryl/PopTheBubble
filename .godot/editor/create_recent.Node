@@ -1,14 +1,14 @@
 CollisionShape2D
+Sprite2D
+RigidBody2D
 Area2D
+Timer
 StaticBody2D
 Parallax2D
 Node
-Sprite2D
 CanvasLayer
 NavigationRegion2D
 NavigationAgent2D
 RayCast2D
 CameraRegion2D
 Camera2D
-CameraRegionController2D
-TileMapLayer

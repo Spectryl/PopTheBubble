@@ -27,7 +27,7 @@ AtkinsonHyperlegibleNext-Regular.ttf::FontFile::5531627316118471859::1758864457:
 follow_link.svg::CompressedTexture2D::2939234103704242795::1758864457::1758864459::1::::<><><>0<>0<>b98574db58dcfb336ba17cb0629b0aa4<>res://.godot/imported/follow_link.svg-9a62ff42abf4d331fa45ad90e1c993f8.ctex::
 ::res://addons/TileMapDual/::1759018446
 AtlasWatcher.gd::GDScript::-1::1759018446::0::1::::AtlasWatcher<>RefCounted<><>0<>0<><>::
-CursorDual.gd::GDScript::6975401629288134363::1759018446::0::1::::CursorDual<>Sprite2D<>res://addons/TileMapDual/CursorDual.svg<>0<>0<><>::
+CursorDual.gd::GDScript::6975401629288134363::1759018446::0::1::::CursorDual<>Sprite2D<><>0<>0<><>::
 CursorDual.svg::CompressedTexture2D::3736514381977998223::1759018446::1759018449::1::::<><><>0<>0<>4f3c24f921a87730c2bbd49e200dae4f<>res://.godot/imported/CursorDual.svg-af24e4bad2d22f0cc5627c83d35ae307.ctex::
 Display.gd::GDScript::-1::1759018446::0::1::::Display<>Node2D<><>0<>0<><>::
 DisplayLayer.gd::GDScript::-1::1759018446::0::1::::DisplayLayer<>TileMapLayer<><>0<>0<><>::
@@ -38,9 +38,9 @@ TerrainDual.gd::GDScript::-1::1759018446::0::1::::TerrainDual<>Resource<><>0<>0<
 TerrainLayer.gd::GDScript::-1::1759018446::0::1::::TerrainLayer<>Resource<><>0<>0<><>::
 TerrainPreset.gd::GDScript::5021966004747345406::1759021017::0::1::::TerrainPreset<>RefCounted<><>0<>0<><>::
 TileCache.gd::GDScript::-1::1759018446::0::1::::TileCache<>Resource<><>0<>0<><>::
-TileMapDual.gd::GDScript::5427212528877198005::1759018446::0::1::::TileMapDual<>TileMapLayer<>res://addons/TileMapDual/TileMapDual.svg<>0<>1<><>::
+TileMapDual.gd::GDScript::5427212528877198005::1759018446::0::1::::TileMapDual<>TileMapLayer<><>0<>1<><>::
 TileMapDual.svg::CompressedTexture2D::3552606117148040366::1759018446::1759018449::1::::<><><>0<>0<>9132b3dde09616578bae3c0a4cd0497a<>res://.godot/imported/TileMapDual.svg-74ed91a3d196dbe51dce1133c9b2d6f7.ctex::
-TileMapDualLegacy.gd::GDScript::-1::1759018446::0::1::::TileMapDualLegacy<>TileMapLayer<>res://addons/TileMapDual/TileMapDual.svg<>0<>1<><>::
+TileMapDualLegacy.gd::GDScript::-1::1759018446::0::1::::TileMapDualLegacy<>TileMapLayer<><>0<>1<><>::
 TileSetWatcher.gd::GDScript::-1::1759018446::0::1::::TileSetWatcher<>Resource<><>0<>0<><>::
 Util.gd::GDScript::-1::1759018446::0::1::::Util<>RefCounted<><>0<>0<><>::
 ::res://Art/::1758943578
@@ -49,15 +49,15 @@ Bubble.png::CompressedTexture2D::8351403959105595579::1759022201::1759022203::1:
 OrangeBubble.png::CompressedTexture2D::6725629771512620511::1759031888::1759031926::1::::<><><>0<>0<>cbeae6b46b101c5e58a323b6f2ab3985<>res://.godot/imported/OrangeBubble.png-195bc429db267283b9f2d70a21179b31.ctex::
 SmallBubble.png::CompressedTexture2D::5510296774105575882::1758906103::1758906488::1::::<><><>0<>0<>830e2c31092182a6a427e80dcde38fb8<>res://.godot/imported/SmallBubble.png-d59cb970d5b32f60bdbc686c4509c049.ctex::
 SmallOrangeBubble.png::CompressedTexture2D::2174866410775429287::1759031925::1759031926::1::::<><><>0<>0<>1624caa6cb1854fc06a2ca65392bbce0<>res://.godot/imported/SmallOrangeBubble.png-50f92c80a435722e861e0fe6d90a756b.ctex::
-::res://Art/Characters/::1759023403
+::res://Art/Characters/::1759076645
 Bop.png::CompressedTexture2D::5988576789830203011::1759023401::1759023403::1::::<><><>0<>0<>c170063ccc55192165f8b521434fbb9e<>res://.godot/imported/Bop.png-688b7b1e53ea11237af7320bebb0908f.ctex::
 Caterpiller.png::CompressedTexture2D::3100050532187137771::1758943416::1758943421::1::::<><><>0<>0<>2cb9bf2956a1fc2c74d0d858f40fd771<>res://.godot/imported/Caterpiller.png-5ba47ea8bcedcc115042b09274fc8962.ctex::
-Pop.png::CompressedTexture2D::2655646238979887506::1759022723::1759022724::1::::<><><>0<>0<>e8cd5446730f7cd023e1eca0937350e4<>res://.godot/imported/Pop.png-ef15703727bef18b6f05cd3792347ba1.ctex::
+Pop.png::CompressedTexture2D::2655646238979887506::1759076645::1759076647::1::::<><><>0<>0<>e8cd5446730f7cd023e1eca0937350e4<>res://.godot/imported/Pop.png-ef15703727bef18b6f05cd3792347ba1.ctex::
 ::res://Art/Misc/::1759020648
 BackGroundAssets.png::CompressedTexture2D::6505230242267585951::1759011600::1759016692::1::::<><><>0<>0<>b6da35a59fb8ef0ae5f4a6b05c49c244<>res://.godot/imported/BackGroundAssets.png-eef3c26df99970163b8db4569e119081.ctex::
 PrototypeTilemap128x128.png::CompressedTexture2D::8324229393009278354::1759020622::1759020648::1::::<><><>0<>0<>f5d23ad807aa2abaed340774fb2360d2<>res://.godot/imported/PrototypeTilemap128x128.png-cd38f60bf167585261511abf75ea29cf.ctex::
 TileMap.png::CompressedTexture2D::8821907855507356816::1759017993::1759017995::1::::<><><>0<>0<>0a27dd416b65f9c0bfbbf08fb4d1f46a<>res://.godot/imported/TileMap.png-63856dda4a82412dce8ceab7d9b4a790.ctex::
-::res://Art/Project Files/::1759031920
+::res://Art/Project Files/::1759076627
 ::res://Audio/::1758825505
 ::res://Audio/Music/::1758825500
 ::res://Audio/Sound/::1758825504
@@ -66,17 +66,17 @@ RoadRage-Regular.ttf::FontFile::7125582611857078114::1757812810::1758946675::1::
 ::res://Resources/::1759027151
 Background.tres::CompressedTexture2D::8783378933304567830::1759027151::0::1::::<><><>0<>0<><>::
 BopTextureAtlus.tres::CompressedTexture2D::7571371561247562810::1759023427::0::1::::<><><>0<>0<><>::
-ButtonTheme.tres::Theme::1846637969778801658::1759024995::0::1::::<><><>0<>0<><>::uid://c8rxkmcj87xvm::::res://Font/RoadRage-Regular.ttf
-CameraTransition.tres::Resource/CameraTransition::8921805066239694668::1759024995::0::1::::<><><>0<>0<><>::uid://uf46ia8jcndp::::res://addons/cameraregion2d/CameraTransition.gd
-LabelFontSettings.tres::LabelSettings::1535201378844798506::1759024995::0::1::::<><><>0<>0<><>::
+ButtonTheme.tres::Theme::1846637969778801658::1759074647::0::1::::<><><>0<>0<><>::uid://c8rxkmcj87xvm::::res://Font/RoadRage-Regular.ttf
+CameraTransition.tres::Resource/CameraTransition::8921805066239694668::1759074647::0::1::::<><><>0<>0<><>::uid://uf46ia8jcndp::::res://addons/cameraregion2d/CameraTransition.gd
+LabelFontSettings.tres::LabelSettings::1535201378844798506::1759074647::0::1::::<><><>0<>0<><>::
 NewButtonTheme.tres::Theme::3087100848328825437::1758946954::0::1::::<><><>0<>0<><>::uid://c8rxkmcj87xvm::::res://Font/RoadRage-Regular.ttf
 PopTextureAtlus.tres::CompressedTexture2D::6741573538368650080::1759022854::0::1::::<><><>0<>0<><>::
 ::res://Scenes/::1759031947
-Bop.tscn::PackedScene::2184941018627654506::1759039580::0::1::::<><><>0<>0<><>::uid://df4vnbibkxolu::::res://Resources/BopTextureAtlus.tres<>uid://rumq16tppnbp::::res://Scripts/bop.gd<>uid://crk58qobvqe5h::::res://Art/Characters/Bop.png
-bubble.tscn::PackedScene::8626977304033175999::1759039311::0::1::::<><><>0<>0<><>::uid://chy865v3wn1vf::::res://Scripts/bubble.gd<>uid://dq8qnx6rw0afj::::res://Art/Bubbles/Bubble.png<>uid://ckrh1u6mu618i::::res://Art/Bubbles/SmallBubble.png
+Bop.tscn::PackedScene::2184941018627654506::1759076300::0::1::::<><><>0<>0<><>::uid://df4vnbibkxolu::::res://Resources/BopTextureAtlus.tres<>uid://rumq16tppnbp::::res://Scripts/bop.gd<>uid://crk58qobvqe5h::::res://Art/Characters/Bop.png
+bubble.tscn::PackedScene::8626977304033175999::1759076329::0::1::::<><><>0<>0<><>::uid://chy865v3wn1vf::::res://Scripts/bubble.gd<>uid://dq8qnx6rw0afj::::res://Art/Bubbles/Bubble.png<>uid://ckrh1u6mu618i::::res://Art/Bubbles/SmallBubble.png
 caterpiller.tscn::PackedScene::4687203119519164249::1758943490::0::1::::<><><>0<>0<><>::
-orange_bubble.tscn::PackedScene::3451050873560186534::1759031968::0::1::::<><><>0<>0<><>::uid://chy865v3wn1vf::::res://Scripts/bubble.gd<>uid://c227e0rfrlybv::::res://Art/Bubbles/OrangeBubble.png<>uid://58ry5h30ab7t::::res://Art/Bubbles/SmallOrangeBubble.png
-player.tscn::PackedScene::1943666171757167068::1759032001::0::1::::<><><>0<>0<><>::uid://bq1g3vqh3w0o5::::res://Scripts/player.gd<>uid://c3bwy4j5tbnk7::::res://Resources/PopTextureAtlus.tres
+orange_bubble.tscn::PackedScene::3451050873560186534::1759076340::0::1::::<><><>0<>0<><>::uid://dd46kbalne8vg::::res://Scripts/orange_bubble.gd<>uid://c227e0rfrlybv::::res://Art/Bubbles/OrangeBubble.png<>uid://58ry5h30ab7t::::res://Art/Bubbles/SmallOrangeBubble.png
+player.tscn::PackedScene::1943666171757167068::1759076269::0::1::::<><><>0<>0<><>::uid://bq1g3vqh3w0o5::::res://Scripts/player.gd<>uid://c3bwy4j5tbnk7::::res://Resources/PopTextureAtlus.tres
 WebComponentDelete.tscn::PackedScene::7961229543842334900::1758993066::0::1::::<><><>0<>0<><>::uid://baw0kaym53u27::::res://Scripts/web_component_delete.gd
 world_boundary.tscn::PackedScene::14842707494191447::1759021556::0::1::::<><><>0<>0<><>::
 ::res://Scenes/BG/::1759027808
@@ -100,13 +100,14 @@ vine_4.tscn::PackedScene::3043655738223327694::1759027615::0::1::::<><><>0<>0<><
 ::res://Scenes/Main/::1758829619
 GameMaster.tscn::PackedScene::1026301255775248041::1758838700::0::1::::<><><>0<>0<><>::uid://bg6s2oxmnv8vx::::res://Scripts/Main/game_master.gd
 ::res://Scenes/Main Menu/::1758854202
-MainMaster.tscn::PackedScene::7248035450114292791::1759039580::0::1::::<><><>0<>0<><>::uid://dxyyr1ix1p24e::::res://Scripts/Main/main_master.gd<>uid://hgpssyy78rr::::res://Scenes/world_boundary.tscn<>uid://6enwohhbp3rq::::res://Scenes/Bop.tscn<>uid://2xr5r7dti6l1::::res://Scenes/player.tscn<>uid://dquk3viy77axe::::res://Art/Misc/PrototypeTilemap128x128.png<>uid://mv7ijtpb4gwj::::res://addons/cameraregion2d/CameraRegionController2D.gd<>uid://d4lhn0nt4wcr8::::res://addons/cameraregion2d/CameraRegion2D.gd<>uid://d0d13c2dkbh0w::::res://Resources/CameraTransition.tres<>uid://caf5t3qaow1g8::::res://Scenes/BG/Tree.tscn<>uid://cmqgypujone22::::res://Scenes/BG/big_vine.tscn<>uid://d0fgsr7irpop2::::res://Scenes/BG/moon.tscn<>uid://dondsor8nxu5::::res://Scenes/BG/vine_1.tscn<>uid://doacomwcpsej8::::res://Scenes/BG/mushroom_1.tscn<>uid://6fjvxl3qslgs::::res://Scenes/BG/big_bush.tscn<>uid://bdeetcx3nuga0::::res://Scenes/BG/mushroom_3.tscn<>uid://bb52y27n41nb::::res://Scenes/BG/mushroom_2.tscn<>uid://dxgwhbgscxinq::::res://Scenes/BG/root.tscn<>uid://bm6cum7gdgmjq::::res://Scenes/BG/smallbush.tscn<>uid://dwggek7cw0s38::::res://Scenes/BG/vine_2.tscn<>uid://crpvyxtxql5yk::::res://Scenes/BG/rock_2.tscn
+MainMaster.tscn::PackedScene::7248035450114292791::1759076098::0::1::::<><><>0<>0<><>::uid://dxyyr1ix1p24e::::res://Scripts/Main/main_master.gd<>uid://hgpssyy78rr::::res://Scenes/world_boundary.tscn<>uid://6enwohhbp3rq::::res://Scenes/Bop.tscn<>uid://2xr5r7dti6l1::::res://Scenes/player.tscn<>uid://dquk3viy77axe::::res://Art/Misc/PrototypeTilemap128x128.png<>uid://mv7ijtpb4gwj::::res://addons/cameraregion2d/CameraRegionController2D.gd<>uid://d4lhn0nt4wcr8::::res://addons/cameraregion2d/CameraRegion2D.gd<>uid://d0d13c2dkbh0w::::res://Resources/CameraTransition.tres<>uid://caf5t3qaow1g8::::res://Scenes/BG/Tree.tscn<>uid://cmqgypujone22::::res://Scenes/BG/big_vine.tscn<>uid://d0fgsr7irpop2::::res://Scenes/BG/moon.tscn<>uid://dondsor8nxu5::::res://Scenes/BG/vine_1.tscn<>uid://doacomwcpsej8::::res://Scenes/BG/mushroom_1.tscn<>uid://6fjvxl3qslgs::::res://Scenes/BG/big_bush.tscn<>uid://bdeetcx3nuga0::::res://Scenes/BG/mushroom_3.tscn<>uid://bb52y27n41nb::::res://Scenes/BG/mushroom_2.tscn<>uid://dxgwhbgscxinq::::res://Scenes/BG/root.tscn<>uid://bm6cum7gdgmjq::::res://Scenes/BG/smallbush.tscn<>uid://dwggek7cw0s38::::res://Scenes/BG/vine_2.tscn<>uid://crpvyxtxql5yk::::res://Scenes/BG/rock_2.tscn
 MainMenuMaster.tscn::PackedScene::6797043151535821250::1758993092::0::1::::<><><>0<>0<><>::uid://bbqu8r7bxve6h::::res://Scripts/Main Menu/main_menu_master.gd<>uid://1kr4fl0cxyvy::::res://Resources/ButtonTheme.tres<>uid://v4wspbbfbsx3::::res://Resources/LabelFontSettings.tres<>uid://dloqj1joi8dqa::::res://Scenes/WebComponentDelete.tscn
 ::res://Scenes/UI/::1758825573
-::res://Scripts/::1759032499
-bop.gd::GDScript::1235256487923385325::1759032499::0::1::::<>CharacterBody2D<><>0<>0<><>::
-bubble.gd::GDScript::5315768968765738559::1758925474::0::1::::Bubble<>RigidBody2D<><>0<>0<><>::
-player.gd::GDScript::3563531435756692398::1759008568::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
+::res://Scripts/::1759076529
+bop.gd::GDScript::1235256487923385325::1759074869::0::1::::<>CharacterBody2D<><>0<>0<><>::
+bubble.gd::GDScript::5315768968765738559::1759075489::0::1::::Bubble<>RigidBody2D<><>0<>0<><>::
+player.gd::GDScript::3563531435756692398::1759076529::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
+orange_bubble.gd::GDScript::7431595674616651428::1759075062::0::1::::OrangeBubble<>RigidBody2D<><>0<>0<><>::
 web_component_delete.gd::GDScript::2433372814702372422::1758993056::0::1::::<>Node<><>0<>0<><>::
 ::res://Scripts/Main/::1759019695
 game_master.gd::GDScript::2872691349623242269::1758861656::0::1::::GameMaster<>Node<><>0<>0<><>::

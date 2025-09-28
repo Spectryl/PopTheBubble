@@ -28,6 +28,8 @@ enabled=PackedStringArray("res://addons/TileMapDual/plugin.cfg", "res://addons/c
 
 Poisonable="Group to check if someone can be poisoned"
 Player=""
+needle=""
+OrangeBubble=""
 
 [input]
 
