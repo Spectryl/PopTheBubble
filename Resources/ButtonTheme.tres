@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=8 format=3 uid="uid://1kr4fl0cxyvy"]
+[gd_resource type="Theme" load_steps=11 format=3 uid="uid://1kr4fl0cxyvy"]
 
 [ext_resource type="FontFile" uid="uid://c8rxkmcj87xvm" path="res://Font/RoadRage-Regular.ttf" id="1_mt4at"]
 
@@ -21,6 +21,16 @@ border_color = Color(0.8, 0.8, 0.8, 0)
 bg_color = Color(0.6, 0.6, 0.6, 0)
 draw_center = false
 border_color = Color(3.657937e-06, 0.92649037, 0.81018955, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_utv5k"]
+bg_color = Color(0.99999994, 0.23681495, 0.67375857, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o0j7p"]
+bg_color = Color(1, 0.26983145, 0.6009367, 1)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_snlhl"]
+color = Color(0.99493283, 0, 0.45876622, 1)
+thickness = 8
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rekv5"]
 bg_color = Color(0.80116725, 0.5662217, 0.8821604, 1)
@@ -47,4 +57,7 @@ Button/styles/focus = SubResource("StyleBoxFlat_c1qgm")
 Button/styles/hover = SubResource("StyleBoxFlat_mt4at")
 Button/styles/normal = SubResource("StyleBoxFlat_alore")
 Button/styles/pressed = SubResource("StyleBoxFlat_k2kie")
+HSlider/styles/grabber_area = SubResource("StyleBoxFlat_utv5k")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_o0j7p")
+HSlider/styles/slider = SubResource("StyleBoxLine_snlhl")
 Panel/styles/panel = SubResource("StyleBoxFlat_rekv5")

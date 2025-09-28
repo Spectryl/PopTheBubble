@@ -1,4 +1,8 @@
-[gd_scene format=3 uid="uid://4ph2e7elahyw"]
+[gd_scene load_steps=4 format=3 uid="uid://4ph2e7elahyw"]
+
+[ext_resource type="Script" uid="uid://bhpyi2imaul76" path="res://Scripts/Main Menu/options.gd" id="1_onav0"]
+[ext_resource type="Theme" uid="uid://1kr4fl0cxyvy" path="res://Resources/ButtonTheme.tres" id="1_pa881"]
+[ext_resource type="LabelSettings" uid="uid://v4wspbbfbsx3" path="res://Resources/LabelFontSettings.tres" id="2_onav0"]
 
 [node name="Options" type="Control"]
 layout_mode = 3
@@ -7,3 +11,44 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_onav0")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 81.0
+offset_right = 1085.0
+offset_bottom = 588.0
+theme = ExtResource("1_pa881")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 142.0
+offset_top = 1.0
+offset_right = 698.0
+offset_bottom = 133.0
+text = "VOLUME CONTROL"
+label_settings = ExtResource("2_onav0")
+
+[node name="SoundSlider" type="HSlider" parent="Panel"]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 62.0
+offset_right = 691.0
+offset_bottom = 243.0
+max_value = 1.0
+step = 0.01
+value = 0.5
+ticks_on_borders = true
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 578.0
+offset_top = 482.0
+offset_right = 687.0
+offset_bottom = 579.0
+theme = ExtResource("1_pa881")
+text = "Back"
+
+[connection signal="value_changed" from="Panel/SoundSlider" to="." method="_on_sound_slider_value_changed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,6 +1,6 @@
 extends Control
 
-
+const CREDITS = preload("res://Scenes/Main Menu/credits.tscn")
 
 enum MenuID {
 	TITLE_SCREEN = 0,
@@ -26,7 +26,7 @@ func switch_menu(NewMenuID: MenuID) -> void:
 		MenuID.CONTROLS:
 			pass
 		MenuID.OPTIONS:
-			current_menu = load("res://Scenes/Main Menu/options.tscn").instantiate()
+			current_menu = CREDITS.instantiate()
 		MenuID.CREDITS:
 			current_menu = load("res://Scenes/Main Menu/credits.tscn").instantiate()
 		MenuID.EXTRAS:

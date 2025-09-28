@@ -24,3 +24,6 @@ res://Scenes/Main Menu/credits.tscn
 res://Scenes/Main/sound_master.tscn
 res://Scripts/Main/sound_master.gd
 res://Resources/CreditsLabelSettings.tres
+res://Scenes/Main Menu/options.tscn
+res://Scripts/Main Menu/options.gd
+res://Scripts/Main Menu/credits.gd

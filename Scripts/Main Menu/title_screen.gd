@@ -6,6 +6,7 @@ extends Control
 
 @onready var MainMenu = get_parent()
 
+
 const HOVER_SCALE = Vector2(1.1, 1.1)
 const DEFAULT_SCALE = Vector2(1.0,1.0)
 const TWEEN_DURATION = .15
